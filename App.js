@@ -1,12 +1,21 @@
-import React,{useState,Component} from 'react'
+import React,{Component} from 'react'
 import Layout from "./BurgerBuilder/components/Layout/Layout";
 import BurgerBuilder from "./BurgerBuilder/containers/BurgerBuilder/BurgerBuilder";
 import './App.css'
 
 
+const style =
+    {
 
+    }
 class App extends Component
 {
+    state =
+        {
+            openMore: false
+        }
+
+
     render()
     {
         return(
@@ -17,7 +26,10 @@ class App extends Component
 
                 <nav>
                     <div className="logo">TeamTalk.</div>
-                    <ul className="nav-links">
+                    <ul
+                        className="nav-links"
+                        style={}
+                    >
                         <li>
                             <a href="">About Us</a>
                         </li>
@@ -31,7 +43,8 @@ class App extends Component
                             <a href="">Join Us</a>
                         </li>
                     </ul>
-                    <i className="fas fa-bars more-button">
+                    <i className="fas fa-bars more-button"
+                    >
                     </i>
                 </nav>
                 <div className="text">

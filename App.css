@@ -78,6 +78,9 @@ nav .more-button {
   nav .more-button {
     display: block;
   }
+  nav .more-button:hover {
+    cursor: pointer;
+  }
 }
 * {
   margin: 0;

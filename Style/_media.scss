@@ -43,6 +43,10 @@
     .more-button
     {
       display: block;
+      &:hover
+      {
+        cursor:pointer;
+      }
     }
   }
 }
