@@ -61,6 +61,7 @@ nav .more-button {
     width: 50%;
     padding: 20px;
     transform: translateX(-500px);
+    transition: 0.5s ease-in-out;
   }
   nav .nav-links li {
     margin-top: 10px;
