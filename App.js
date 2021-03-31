@@ -7,9 +7,30 @@ class App extends Component
     {
         return(
             <div>
-                <Layout>
+                {/*<Layout>
                     <BurgerBuilder/>
-                </Layout>
+                </Layout>*/}
+                <nav>
+                    <div className="logo"></div>
+                    <ul className="nav-links">
+                        <li>
+                            <a href="">home</a>
+                        </li>
+                        <li>
+                            <a href="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="">Community</a>
+                        </li>
+                        <li>
+                            <a href="">Help</a>
+                        </li>
+                        <li>
+                            <a href="">Join Us</a>
+                        </li>
+                    </ul>
+
+                </nav>
             </div>
         )
     }
