@@ -1,0 +1,5 @@
+.Pokemon-Menu
+{
+    display: flex;
+    flex-direction: column;
+}

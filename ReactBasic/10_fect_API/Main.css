@@ -1,0 +1,67 @@
+.main
+{
+    padding:1em;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #e0e0e0;
+    border: 3px solid #316af7;
+
+}
+.HP-bar
+{
+    display: flex;
+    align-items:center;
+    color: rgb(182,128,43);
+    background-color:#505050;
+    border-radius: 5px;
+    padding: 3px;
+}
+.HP-bar > h5
+{
+    margin: 0;
+
+    background: #F8D050;
+    background: -webkit-linear-gradient(to bottom, #F8D050 0%, #F8B040 100%);
+    background: -moz-linear-gradient(to bottom, #F8D050 0%, #F8B040 100%);
+    background: linear-gradient(to bottom, #F8D050 0%, #F8B040 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.HP-bar-Health
+{
+    margin-left: 2px;
+
+    flex-grow: 1;
+    align-self: stretch;
+    border-radius: 5px;
+    border: solid 2px #eeeeee;
+
+    background: #58D080;
+
+    background: -webkit-linear-gradient(to bottom, #58D080 37%, #70F8A8 100%);
+    background: -moz-linear-gradient(to bottom, #58D080 37%, #70F8A8 100%);
+    background: linear-gradient(to bottom, #58D080 37%, #70F8A8 100%);
+    -webkit-text-fill-color: transparent;
+}
+
+.main-HP-Values
+{
+    text-align: end;
+    margin-bottom: 0;
+}
+
+.main-name-level
+{
+    text-align: center;
+
+}
+
+.top
+{
+    display:flex;
+
+}
+.top > img
+{
+
+
+}

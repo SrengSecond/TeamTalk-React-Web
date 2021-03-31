@@ -1,0 +1,20 @@
+.weapon-list {
+  display: flex;
+  flex-direction: column;
+}
+.weapon-list .weaponBar {
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 300px;
+  text-align: center;
+}
+.weapon-list .weaponBar .edit-content-border {
+  border: 2px solid Gray;
+}
+
+.weaponBar {
+  border: 1px solid #505050;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=Weapon.css.map */

@@ -1,0 +1,112 @@
+.section1 {
+  font-family: Arial, serif;
+  padding: 0 12em;
+  display: flex;
+}
+
+.mainPage h3 {
+  font-family: Arial, serif;
+  font-style: italic;
+  margin: 0;
+  margin-bottom: 4em;
+  margin-top: 4em;
+}
+
+.title-inside, .title-inside-2 {
+  margin: 0;
+}
+
+.title-inside-2 {
+  margin-bottom: 12px;
+}
+
+.display {
+  display: flex;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: bold;
+  font-family: Arial, serif;
+  align-items: flex-end;
+}
+.title .top {
+  display: flex;
+  align-items: flex-end;
+}
+.title .h2 {
+  margin: 0;
+}
+
+.section {
+  color: white;
+  background-color: black;
+  margin-right: 10px;
+}
+.section p {
+  font-size: 16px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+.section h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  grid-template-areas: "left left right right " "left left box bo " "left left  box bo" "left left . bo ";
+  grid-gap: 10px;
+}
+
+.containLeft {
+  grid-area: left;
+}
+.containLeft h4 {
+  font-family: Arial, serif;
+  font-style: italic;
+  margin: 0;
+}
+
+.containRight {
+  grid-area: right;
+  /*background-color: #3a7251;*/
+}
+
+.box {
+  grid-area: box;
+  background-color: black;
+  color: white;
+  font-family: Arial, serif;
+  text-align: end;
+  padding: 10px;
+}
+.box h3 {
+  margin: 0;
+}
+
+.bo {
+  grid-area: bo;
+}
+
+.sidebar {
+  margin-left: 1em;
+  padding: 0 5px;
+  border: 1px solid #535353;
+  background-color: black;
+  color: white;
+  width: 2500px;
+}
+.sidebar h3 {
+  text-align: center;
+  font-style: italic;
+}
+.sidebar .question {
+  font-size: 16px;
+  font-style: italic;
+}
+.sidebar .content {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=Section1.css.map */

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap');
+.weapon
+{
+    font-family: 'Changa', sans-serif;
+    margin:0;
+}
+
+.edit-content > p
+{
+    color:#eeeeee;
+}
+.weapon-name
+{
+    margin:0;
+    grid-row: 1/ spam 3
+}
+
+.edit-content
+{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+p
+{
+    grid-row: 1/ spam 2;
+    /*background-color: #cccccc;*/
+
+}
+.edit-content > button
+{
+    margin:0;
+}
+.edit-content > button:nth-child(even)
+{
+    background-color:#58D080;
+}
+
+.weapon-img
+{
+    width: 16em;
+}
+
+.Display-button
+{
+
+}
+.red-alert
+{
+    color: red;
+}
+.bold-alert
+{
+    font-weight: bold;
+}
+
+

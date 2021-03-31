@@ -1,0 +1,155 @@
+$HeaderFont: Arial, serif;
+
+@mixin zeroMargin()
+{
+  margin:0;
+
+}
+@mixin displayFlex()
+{
+  display:flex;
+  align-items: flex-end;
+}
+@mixin boldText()
+{
+  font-family: $HeaderFont;
+  font-style: italic;
+  @include zeroMargin();
+}
+.section1
+{
+  font-family: $HeaderFont;
+  padding: 0 12em;
+  display:flex;
+}
+.mainPage
+{
+
+  h3
+  {
+    @include boldText();
+    margin-bottom: 4em;
+    margin-top: 4em;
+  }
+}
+
+.title-inside
+{
+  @include zeroMargin();
+}
+
+.title-inside-2
+{
+  @extend .title-inside;
+  margin-bottom: 12px;
+}
+
+.display
+{
+  display:flex;
+}
+
+.title
+{
+  .top
+  {
+    @include displayFlex();
+  }
+  font-size:42px;
+  font-weight:bold;
+  font-family: $HeaderFont;
+  align-items: flex-end;
+  .h2
+  {
+    margin:0;
+  }
+}
+.section
+{
+  p {
+    font-size:16px;
+    padding-right: 10px;
+    padding-top: 5px;
+  }
+  h2
+  {
+    @include zeroMargin();
+    text-align:center;
+  }
+  color:white;
+  background-color: black;
+  margin-right: 10px;
+}
+
+.mainPage
+{
+
+}
+.content
+{
+  display:grid;
+  grid-template-areas:
+          "left left right right "
+          "left left box bo "
+          "left left  box bo"
+          "left left . bo ";
+  grid-gap: 10px;
+}
+.containLeft
+{
+  grid-area: left;
+
+
+  h4
+  {
+    @include boldText();
+
+  }
+}
+.containRight
+{
+  grid-area: right;
+  /*background-color: #3a7251;*/
+}
+.box
+{
+  grid-area: box;
+  background-color:black;
+  color: white;
+  font-family: $HeaderFont;
+  text-align:end;
+  padding:10px;
+  h3
+  {
+    margin:0;
+  }
+}
+.bo
+{
+  grid-area: bo;
+
+}
+.sidebar
+{
+  margin-left: 1em;
+  padding: 0 5px;
+  border: 1px solid #535353;
+  background-color: black;
+  color: white;
+  width:2500px;
+  h3
+  {
+    text-align:center;
+    font-style: italic;
+  }
+  .question
+  {
+    font-size: 16px;
+    font-style: italic;
+
+  }
+  .content
+  {
+    font-size: 16px;
+  }
+}

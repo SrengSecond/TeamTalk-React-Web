@@ -1,0 +1,20 @@
+.main-page
+{
+    margin: 0 500px;
+    padding: 0 1em;
+
+}
+.input-name
+{
+    display:flex;
+    align-items:center;
+}
+p
+{
+    margin:0;
+    padding-left: 10px;
+}
+button
+{
+    margin-top: 10px;
+}
