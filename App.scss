@@ -3,10 +3,18 @@
 @import './Style/navbar';
 @import './Style/media';
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  .hoc
+  {
+    position: relative;
+  }
+  .text
+  {
+    color:black;
+    position:relative;
+  }
 }
 

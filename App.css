@@ -7,8 +7,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: rgba(53, 53, 53, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
   min-height: 10vh;
+  /*height: 70px;*/
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
   /*  button
     {
       &:hover
@@ -18,15 +24,15 @@ nav {
     }*/
 }
 nav .logo {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 nav ul {
   display: flex;
   justify-content: space-around;
   flex-grow: 0;
-  width: 30%;
+  width: 40%;
 }
 nav ul li {
   list-style-type: none;
@@ -34,7 +40,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 700;
 }
 nav ul li a:hover {
   border-bottom: 1px solid #fff;
@@ -45,6 +51,30 @@ nav .more-button {
 }
 
 @media all and (max-width: 768px) {
+  nav .nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    width: 50%;
+    padding: 20px;
+    transform: translateX(-500px);
+  }
+  nav .nav-links li {
+    margin-top: 10px;
+    padding: 25px;
+    /*border-bottom:1px solid rgba(176,176,176,1);*/
+    border-radius: 5px;
+  }
+  nav .nav-links li a:hover {
+    border: none;
+  }
+  nav .nav-links li:hover {
+    background-color: #434343;
+    cursor: pointer;
+  }
   nav .more-button {
     display: block;
   }
@@ -53,6 +83,13 @@ nav .more-button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+* .hoc {
+  position: relative;
+}
+* .text {
+  color: black;
+  position: relative;
 }
 
 /*# sourceMappingURL=App.css.map */
