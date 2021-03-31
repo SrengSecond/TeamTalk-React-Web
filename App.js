@@ -1,6 +1,8 @@
 import React,{Component} from 'react'
 import Layout from "./BurgerBuilder/components/Layout/Layout";
 import BurgerBuilder from "./BurgerBuilder/containers/BurgerBuilder/BurgerBuilder";
+import './App.css'
+
 class App extends Component
 {
     render()
@@ -11,7 +13,7 @@ class App extends Component
                     <BurgerBuilder/>
                 </Layout>*/}
                 <nav>
-                    <div className="logo"></div>
+                    <div className="logo">Teamtalk</div>
                     <ul className="nav-links">
                         <li>
                             <a href="">home</a>
@@ -29,7 +31,7 @@ class App extends Component
                             <a href="">Join Us</a>
                         </li>
                     </ul>
-
+                    <i className="fas fa-bars more-button"></i>
                 </nav>
             </div>
         )

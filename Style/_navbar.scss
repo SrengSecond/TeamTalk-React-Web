@@ -1,0 +1,57 @@
+* {
+  color:white;
+}
+
+
+
+
+nav
+{
+  /*display-flex*/
+  @include displayFlex(space-around);
+  background-color: $navBarBackground;
+  min-height: 10vh;
+
+  .logo
+  {
+      font-size:20px;
+      font-weight:700;
+      text-transform: uppercase;
+  }
+
+  ul
+  {
+    display:flex;
+    justify-content: space-around;
+    flex-grow: 0;
+    width: 30%;
+    li
+    {
+      list-style-type: none;
+      a
+      {
+        text-decoration: none;
+        font-size:18px;
+        font-weight:normal;
+
+        &:hover
+        {
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+  }
+  /*  button
+    {
+      &:hover
+      {
+        background-color:#7f3608;
+      }
+    }*/
+  .more-button
+  {
+    font-size:2em;
+    display:none;
+  }
+}
+
