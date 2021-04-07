@@ -4,7 +4,8 @@ import './Form.css'
 const Form = () => {
     return (
         <WithClass classes={"form"}>
-            <h1>Form</h1>
+            <h1>Check this cool <br/> 404 error page! <br/><i className="fas fa-box-open fa-2x"/></h1>
+
         </WithClass >
     );
 };

@@ -50,7 +50,7 @@ function Navbar ()
 
                 <nav className={"navbar"}>
                     <Link className={"navbar-logo"} to={'/'}>
-                        {/*<i className="fas fa-user-astronaut"/> */}TeamTalk.
+                        <i className="fas fa-user-astronaut"/> TeamTalk.
                     </Link>
 
                     <div className={"menu-icon"}
