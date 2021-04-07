@@ -1,9 +1,9 @@
 import React,{Component} from 'react'
-import Layout from "./BurgerBuilder/components/Layout/Layout";
-import BurgerBuilder from "./BurgerBuilder/containers/BurgerBuilder/BurgerBuilder";
-import './App.css'
 
-
+//import Layout from "./BurgerBuilder/components/Layout/Layout";
+//import BurgerBuilder from "./BurgerBuilder/containers/BurgerBuilder/BurgerBuilder";
+import Layout from "./React-feature/ResponNavBar/Layout";
+//import './App.css'
 
 class App extends Component
 {
@@ -22,36 +22,18 @@ class App extends Component
                     })
             })
         }
+
     render()
     {
-
         return(
-            <div className="hoc">
-                <nav>
-                    <div className="logo">TeamTalk.</div>
-                    <ul
-                        className="nav-links"
-                        style={{transform: this.state.openMore ? 'translateX(0px)' : ''}}
-                    >
-                        <li>
-                            <a href="">About Us</a>
-                        </li>
-                        <li>
-                            <a href="">Community</a>
-                        </li>
-                        <li>
-                            <a href="">Help</a>
-                        </li>
-                        <li>
-                            <a href="">Join Us</a>
-                        </li>
-                    </ul>
-                    <i className="fas fa-bars more-button"
-                        onClick={this.handleMoreMenu}>
-                    </i>
-                </nav>
+            // <div className="hoc">
+            //     <Layout>
+            //         <BurgerBuilder/>
+            //     </Layout>
+            // </div>
+            <div>
                 <Layout>
-                    <BurgerBuilder/>
+
                 </Layout>
             </div>
         )
