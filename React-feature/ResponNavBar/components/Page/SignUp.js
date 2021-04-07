@@ -3,7 +3,7 @@ import Aux from '../../hoc/Auxs'
 const SignUp = () => {
     return (
         <Aux>
-            <h1>SignUp</h1>
+            <h1>Sign Up</h1>
         </Aux>
     );
 };

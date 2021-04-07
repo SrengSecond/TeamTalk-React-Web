@@ -3,7 +3,7 @@ import Aux from '../../hoc/Auxs'
 const WhatNew = () => {
     return (
         <Aux>
-            <h1>WhatNew</h1>
+            <h1>What New</h1>
         </Aux>
     );
 };

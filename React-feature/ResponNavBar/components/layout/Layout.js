@@ -11,12 +11,14 @@ import DeveloperUpdate from "../Page/DeveloperUpdate";
 import Form from "../Page/Form";
 import Community from "../Page/Community";
 
+import './Layout.css'
 
 
 function Layout(props) {
     return (
         <Aux>
             <div>
+                <div className="nav-bar">
                 <Router>
                     <Navbar/>
                     <Switch>
@@ -30,6 +32,7 @@ function Layout(props) {
                         <Route path={'/community'} exact component={Community}/>
                     </Switch>
                 </Router>
+                </div>
             </div>
             <main className="layout-main">
                 {props.children}

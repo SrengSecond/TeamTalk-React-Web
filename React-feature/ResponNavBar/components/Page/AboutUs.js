@@ -1,10 +1,10 @@
 import React from 'react';
-import Aux from '../../hoc/Auxs'
+import WithClass from '../../hoc/WithClass'
 const AboutUs = () => {
     return (
-        <Aux>
-            <h1>AboutUs</h1>
-        </Aux>
+        <WithClass classes={'about-us'}>
+            <h1>About Us</h1>
+        </WithClass>
     );
 };
 

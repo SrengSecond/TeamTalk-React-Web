@@ -1,10 +1,11 @@
 import React from 'react';
-import Aux from '../../hoc/Auxs'
+import WithClass from '../../hoc/WithClass'
+import './Form.css'
 const Form = () => {
     return (
-        <Aux>
+        <WithClass classes={"form"}>
             <h1>Form</h1>
-        </Aux>
+        </WithClass >
     );
 };
 

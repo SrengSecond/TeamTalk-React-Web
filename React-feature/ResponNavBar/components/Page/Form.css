@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background-image: url("../../Image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+/*# sourceMappingURL=Form.css.map */

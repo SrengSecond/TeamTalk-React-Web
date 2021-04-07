@@ -42,9 +42,7 @@ function Navbar ()
         else
             {
                 setDropdown(false);
-
             }
-
     }
 
     return (
@@ -52,7 +50,7 @@ function Navbar ()
 
                 <nav className={"navbar"}>
                     <Link className={"navbar-logo"} to={'/'}>
-                        TeamTalk.
+                        {/*<i className="fas fa-user-astronaut"/> */}TeamTalk.
                     </Link>
 
                     <div className={"menu-icon"}

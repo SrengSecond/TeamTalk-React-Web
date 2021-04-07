@@ -3,7 +3,7 @@ import Aux from '../../hoc/Auxs'
 const DeveloperUpdate = () => {
     return (
         <Aux>
-            <h1>DeveloperUpdate</h1>
+            <h1>Developer Update</h1>
         </Aux>
     );
 };
