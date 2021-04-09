@@ -7,10 +7,12 @@ class Home extends React.Component
          return(
              <div className="home-background">
                 <div className="home-Title">
-                    <h1>Welcome</h1>
-                    <h2>Right Place 4YOU</h2>
+                    <div className="title">
+                        <h1>Welcome</h1>
+                        <h2>Right Place 4YOU</h2>
+                    </div>
                     <p>A platform where you can be helped as accessing it </p>
-                    <button>
+                    <button className={"button-explore"}>
                         Explore
                     </button>
                 </div>

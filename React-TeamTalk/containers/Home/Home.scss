@@ -1,7 +1,7 @@
+
 .home-background
 {
-
-  background-image: url(../../../React-TeamTalk/assets/image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg);
+  background-image: url(src/React-TeamTalk/assets/image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg);
   background-position:center;
   background-size: cover;
   background-repeat:no-repeat;
@@ -19,9 +19,14 @@
 
   color: #fff;
 
-  h1
+  .title
   {
-    font-size:3rem;
-    color: #58D080;
+    font-size: 50px;
+    padding:10px 0;
   }
+  p
+  {
+    font-size: 18px;
+  }
+
 }

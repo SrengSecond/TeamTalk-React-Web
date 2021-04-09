@@ -14,9 +14,12 @@
   margin-left: 10%;
   color: #fff;
 }
-.home-Title h1 {
-  font-size: 3rem;
-  color: #58D080;
+.home-Title .title {
+  font-size: 50px;
+  padding: 10px 0;
+}
+.home-Title p {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=Home.css.map */
