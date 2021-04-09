@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  scrollbar-color: #7F7F7F #201C29;
+}
+
+html {
+  overflow-y: scroll;
+  scrollbar-width: 100%;
+}
+
+/*# sourceMappingURL=App.css.map */

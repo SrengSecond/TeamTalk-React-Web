@@ -1,0 +1,22 @@
+.home-background {
+  background-image: url(../../../React-TeamTalk/assets/image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-Title {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 10%;
+  color: #fff;
+}
+.home-Title h1 {
+  font-size: 3rem;
+  color: #58D080;
+}
+
+/*# sourceMappingURL=Home.css.map */

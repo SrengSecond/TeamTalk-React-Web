@@ -6,14 +6,14 @@ import Navbar from "../../../React-feature/ResponNavBar/container/Navbar";
 function Layout(props) {
     return (
         <Aux>
-            <div>
-                <Router>
+            <Router>
+                <div>
                     <Navbar/>
-                </Router>
-            </div>
-            <main className={'layout-main'}>
-                {props.children}
-            </main>
+                </div>
+                <main className={'layout-main'}>
+                    {props.children}
+                </main>
+            </Router>
         </Aux>
     );
 }
