@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 /*import App from './Backup/Clone/App'*/ //Facebook =clone
-import App from './App'
+
+import App from './App'// Testing env
+//import App from './React-TeamTalk/App' // Project env
+
 import './index.css'
 
 /*import App from "./App";*/

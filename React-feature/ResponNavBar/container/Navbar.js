@@ -24,7 +24,7 @@ function Navbar ()
     }
     const OnMouseEnter = () =>
     {
-        if(window.innerWidth<960)
+        if(window.innerWidth<1200)
         {
             setDropdown(false);
         }
@@ -35,7 +35,7 @@ function Navbar ()
     }
     const OnMouseLeave = () =>
     {
-        if(window.innerWidth<960)
+        if(window.innerWidth<1200)
         {
             setDropdown(false);
         }

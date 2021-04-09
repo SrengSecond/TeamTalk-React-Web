@@ -1,17 +1,27 @@
 .form
 {
+
   display:flex;
   height:100vh;
   align-items:center;
   justify-content:center;
   font-size:3rem;
 
+
   //background-image: url("https://i.pinimg.com/originals/28/72/03/28720394db087ac3d6abfd49ea296eaa.jpg");
   background-image: url('../../Image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg');
+  //background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../../Image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg");
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
+
+
   color: #fff;
 
-  text-align:center
+  text-align:center;
+
+  .text
+  {
+    margin-top: 150px;
+  }
 }

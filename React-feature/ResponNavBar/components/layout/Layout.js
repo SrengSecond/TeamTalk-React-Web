@@ -19,19 +19,19 @@ function Layout(props) {
         <Aux>
             <div>
                 <div className="nav-bar">
-                <Router>
-                    <Navbar/>
-                    <Switch>
-                        <Route path={'/'} exact component={Home}/>
-                        <Route path={'/about-us'} exact component={About}/>
-                        <Route path={'/help'} exact component={Help}/>
-                        <Route path={'/sign-up'} exact component={SignUp}/>
-                        <Route path={'/what-new'} exact component={WhatNew}/>
-                        <Route path={'/dev-update'} exact component={DeveloperUpdate}/>
-                        <Route path={'/form'} exact component={Form}/>
-                        <Route path={'/community'} exact component={Community}/>
-                    </Switch>
-                </Router>
+                    <Router>
+                        <Navbar/>
+                        <Switch>
+                            <Route path={'/'} exact component={Home}/>
+                            <Route path={'/about-us'} exact component={About}/>
+                            <Route path={'/help'} exact component={Help}/>
+                            <Route path={'/sign-up'} exact component={SignUp}/>
+                            <Route path={'/what-new'} exact component={WhatNew}/>
+                            <Route path={'/dev-update'} exact component={DeveloperUpdate}/>
+                            <Route path={'/form'} exact component={Form}/>
+                            <Route path={'/community'} exact component={Community}/>
+                        </Switch>
+                    </Router>
                 </div>
             </div>
             <main className="layout-main">

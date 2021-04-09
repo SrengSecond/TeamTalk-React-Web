@@ -1,5 +1,6 @@
 import React from 'react';
 import Aux from '../../hoc/Auxs'
+import './Home.css'
 const Home = () => {
     return (
         <Aux>
