@@ -5,8 +5,9 @@ class Home extends React.Component
     render()
     {
          return(
+
              <div className="home-background">
-                <div className="home-Title">
+                <main className="home-Title">
                     <div className="title">
                         <h1>Welcome</h1>
                         <h2>Right Place 4YOU</h2>
@@ -15,7 +16,26 @@ class Home extends React.Component
                     <button className={"button-explore"}>
                         Explore
                     </button>
-                </div>
+
+                </main>
+                 <footer>
+                     <div>
+                        <i className="fas fa-globe fa-3x" />
+                        <p>Open Platform</p>
+                     </div>
+                     <div>
+                        <i className="fas fa-user-friends fa-3x"/>
+                        <p>User</p>
+                     </div>
+                     <div>
+                        <i className="fas fa-sitemap fa-3x"/>
+                        <p>Team</p>
+                     </div>
+                     <div>
+                        <i className="fas fa-lightbulb fa-3x"/>
+                        <p>Answer</p>
+                     </div>
+                 </footer>
              </div>
          )
     }
