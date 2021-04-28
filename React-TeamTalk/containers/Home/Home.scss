@@ -4,6 +4,7 @@
 }
 .home-background
 {
+  display: flex;
   height:100vh;
   background-image: url(../../../React-TeamTalk/assets/image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg);
   background-position:center;
@@ -12,7 +13,6 @@
 
   .home-Title
   {
-    height:80%;
     display: flex;
     flex-direction:column;
     align-items: start;

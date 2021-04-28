@@ -5,7 +5,6 @@ class Home extends React.Component
     render()
     {
          return(
-
              <div className="home-background">
                 <main className="home-Title">
                     <div className="title">

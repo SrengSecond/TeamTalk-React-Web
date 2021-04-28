@@ -47,7 +47,6 @@ function Navbar ()
 
     return (
         <Aux>
-
                 <nav className={"navbar"}>
                     <Link className={"navbar-logo"} to={'/'}>
                         <i className="fas fa-user-astronaut"/> TeamTalk.
