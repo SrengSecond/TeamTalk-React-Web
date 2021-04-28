@@ -2,7 +2,7 @@
 {
   --home_primary: #EA2282;
 }
-.home-background
+.logInOut-background
 {
   display: flex;
   height:100vh;
@@ -10,6 +10,8 @@
   background-position:center;
   background-size: cover;
   background-repeat:no-repeat;
+  justify-content: space-evenly;
+  align-items:center;
 
   .welcome-title
   {

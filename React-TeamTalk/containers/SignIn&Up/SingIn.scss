@@ -3,18 +3,19 @@
   --pink_primary: #EA2282;
   --gray_second_primary: #6D6D6D;
   --input_background:#dbdbdb;
-  --width_primary: 400px;
+  --width_primary: 500px;
   --height_primary: 50px;
 }
-.signIn-form
+.signIn-compoment
 {
+  border-radius:25px;
   background-color:white;
   display: flex;
   .login-form
   {
 
     margin: 0;
-    border-left: 20px solid var(--pink_primary);
+    border-left: 30px solid var(--pink_primary);
     padding: 50px;
 
 
@@ -70,6 +71,7 @@
     }
   }
 }
+
 .primary-button
 {
   margin-top:10px;

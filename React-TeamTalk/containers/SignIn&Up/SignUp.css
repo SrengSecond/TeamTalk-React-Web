@@ -1,0 +1,83 @@
+.signUp-component {
+  border-radius: 25px;
+  display: flex;
+  background-color: white;
+}
+.signUp-component .signUp-form {
+  border-left: 30px solid var(--pink_primary);
+  padding: 25px;
+}
+.signUp-component .signUp-form .form-title {
+  color: var(--pink_primary);
+  text-align: center;
+}
+.signUp-component .signUp-form .registration-form form {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-auto-columns: minmax(50px, auto);
+}
+.signUp-component .signUp-form .registration-form form label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signUp-component .signUp-form .registration-form form input {
+  font-family: Arial, serif;
+  font-size: 18px;
+  background-color: var(--input_background);
+  outline: none;
+  border: none;
+  height: var(--height_primary);
+  padding: 10px;
+  border-radius: 6px;
+  grid-column: 2/8;
+}
+.signUp-component .signUp-form .registration-form form input[type=number] {
+  -moz-appearance: textfield;
+}
+.signUp-component .signUp-form .registration-form form .major {
+  grid-column: 2/5;
+}
+.signUp-component .signUp-form .registration-form form .year {
+  grid-column: 6/8;
+}
+.signUp-component .signUp-form .registration-form form .year-label {
+  text-align: center;
+}
+.signUp-component .signUp-form .registration-form form .first-name-col {
+  grid-column: 2/4;
+}
+.signUp-component .signUp-form .registration-form form .last-name-col {
+  grid-column: 4/8;
+}
+.signUp-component .signUp-form .registration-form form .first-name-label {
+  grid-column: 2/4;
+}
+.signUp-component .signUp-form .registration-form form .last-name-label {
+  grid-column: 4/8;
+}
+.signUp-component .signUp-form .registration-form form .submit-button {
+  grid-column: 3/6;
+  margin-top: 10px;
+  padding: 8px 0;
+  height: var(--height_primary);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--pink_primary);
+}
+.signUp-component .signUp-form .registration-form form .submit-button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--input_background);
+  color: var(--pink_primary);
+  border-radius: 4px;
+  border: 1px solid var(--pink_primary);
+}
+
+/*# sourceMappingURL=SignUp.css.map */

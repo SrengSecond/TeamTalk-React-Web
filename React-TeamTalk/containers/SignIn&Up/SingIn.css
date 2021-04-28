@@ -2,30 +2,31 @@
   --pink_primary: #EA2282;
   --gray_second_primary: #6D6D6D;
   --input_background:#dbdbdb;
-  --width_primary: 400px;
+  --width_primary: 500px;
   --height_primary: 50px;
 }
 
-.signIn-form {
+.signIn-compoment {
+  border-radius: 25px;
   background-color: white;
   display: flex;
 }
-.signIn-form .login-form {
+.signIn-compoment .login-form {
   margin: 0;
-  border-left: 20px solid var(--pink_primary);
+  border-left: 30px solid var(--pink_primary);
   padding: 50px;
 }
-.signIn-form .login-form .login-Title {
+.signIn-compoment .login-form .login-Title {
   color: var(--pink_primary);
 }
-.signIn-form .login-form form {
+.signIn-compoment .login-form form {
   margin-top: 26px;
 }
-.signIn-form .login-form form .input-label {
+.signIn-compoment .login-form form .input-label {
   color: var(--gray_second_primary);
   margin-bottom: 10px;
 }
-.signIn-form .login-form form input[type=text] {
+.signIn-compoment .login-form form input[type=text] {
   margin-top: 5px;
   margin-bottom: 15px;
   font-family: Arial, serif;
@@ -38,19 +39,19 @@
   padding: 10px;
   border-radius: 6px;
 }
-.signIn-form .login-form form .form-footer {
+.signIn-compoment .login-form form .form-footer {
   display: flex;
   justify-content: space-between;
 }
-.signIn-form .login-form form .form-footer .remember-check {
+.signIn-compoment .login-form form .form-footer .remember-check {
   color: var(--gray_second_primary);
   display: flex;
   align-items: center;
 }
-.signIn-form .login-form form .form-footer .remember-check input {
+.signIn-compoment .login-form form .form-footer .remember-check input {
   margin-right: 10px;
 }
-.signIn-form .login-form form .form-footer a {
+.signIn-compoment .login-form form .form-footer a {
   color: var(--pink_primary);
   text-decoration: none;
 }

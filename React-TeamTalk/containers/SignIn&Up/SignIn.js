@@ -8,7 +8,7 @@ class SignIn extends React.Component
     render()
     {
         return(
-            <div className={"signIn-form"}>
+            <div className={"signIn-compoment"}>
                 <div className="login-form">
                     <h1 className={"login-Title"}>LOGIN FORM</h1>
                     <form action="">
@@ -26,7 +26,7 @@ class SignIn extends React.Component
                             <Link href="" to={'/forget_password'}>Forget Password ?</Link>
                         </div>
                         <br/>
-                        <button className={"primary-button"} type={"submit"}>LOG IN</button>
+                        <button className={"primary-button"} type={"submit"}> LOG IN</button>
                     </form>
                 </div>
             </div>

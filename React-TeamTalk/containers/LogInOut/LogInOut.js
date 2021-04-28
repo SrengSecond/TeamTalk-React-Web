@@ -1,26 +1,18 @@
 import React from 'react'
 import './LogInOut.css'
 import SignIn from "../SignIn&Up/SignIn";
+import SignUp from "../SignIn&Up/SignUp";
+import SignInLog from "../SignIn&Up/SignInLog";
+import SignUpLog from "../SignIn&Up/SignUpLog";
+
 class LogInOut extends React.Component
 {
     render()
     {
         return(
-            <div className="home-background">
-
-                {/*welcome-title*/}
-                <main className="welcome-title">
-                    <div className="title">
-                        <h3>Welcome Again</h3>
-                        <h4>We Glad You Come Here</h4>
-                    </div>
-                    <button className={"button-explore"}>
-                        Home
-                    </button>
-                </main>
-
-                {/*login Form*/}
-                <SignIn/>
+            <div className="logInOut-background">
+                <SignUpLog/> <SignUp/>
+                {/*<SignInLog/> <SignIn/>*/}
             </div>
         )
     }
