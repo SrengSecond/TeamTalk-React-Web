@@ -1,0 +1,82 @@
+:root
+{
+  --home_primary: #EA2282;
+}
+.home-background
+{
+  display: flex;
+  height:100vh;
+  background-image: url(../../../React-TeamTalk/assets/image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg);
+  background-position:center;
+  background-size: cover;
+  background-repeat:no-repeat;
+
+  .welcome-title
+  {
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    justify-content: center;
+
+
+    //margin-left:10%;
+
+    color: #fff;
+
+    .title
+    {
+      font-size: 50px;
+      padding:10px 0;
+    }
+    p
+    {
+      font-size: 18px;
+    }
+    .button-explore
+    {
+      margin-top:10px;
+      padding: 8px 20px;
+      border-radius: 4px;
+      outline: none;
+      border: none;
+      font-size: 18px;
+      color: #fff;
+      cursor: pointer;
+      background-color: var(--home_primary);
+
+      &:hover
+      {
+        transition: all 0.3s ease-in-out;
+        background-color: #fff;
+        color: var(--home_primary);
+        border-radius: 4px;
+        //border: 1px solid var(--home_primary)
+      }
+    }
+
+  }
+
+  footer
+  {
+
+    display: flex;
+    padding: 20px;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: space-around;
+
+    div
+    {
+      display: flex;
+      flex-direction:column;
+      align-items:center;
+      p
+      {
+        margin-top: 10px;
+      }
+    }
+  }
+}

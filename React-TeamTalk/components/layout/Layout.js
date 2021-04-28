@@ -8,7 +8,7 @@ function Layout(props) {
         <Aux>
             <Router>
                 <div>
-                    {/*<Navbar/>*/}
+                    <Navbar/>
                 </div>
                 <main className={'layout-main'}>
                     {props.children}
