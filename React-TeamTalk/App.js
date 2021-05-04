@@ -1,21 +1,30 @@
 import React from 'react';
 import Layout from "./components/layout/Layout";
 import './App.css'
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
 import Home from './containers/Home/Home'
-import SignUp from "../React-TeamTalk/containers/SignIn&Up/SignUp"
-import SignIn from "./containers/SignIn&Up/SignIn";
 import LogInOut from "./containers/LogInOut/LogInOut";
+import ExploreCompoment from "./containers/Explore/ExploreCompoment";
 
 
-const MyComponent = () =>
+
+const App = () =>
 {
     return (
-        <Layout>
-            {/*<Home/>*/}
-            <LogInOut/>
+        <Router>
+            <Layout>
+                    <Switch>
+                        <Route path={"/"} exact component={Home}/>
+                        <Route path={"/explore"} component={ExploreCompoment}/>
+                        <Route path={"/sign-up"} component={LogInOut}/>
+                    </Switch>
+                    {/*<Home/>*/}
+                    {/*<ExploreCompoment/>*/}
+                    {/*<LogInOut/>*/}
+            </Layout>
+        </Router>
 
-        </Layout>
     );
 };
 
-export default MyComponent;
+export default App;

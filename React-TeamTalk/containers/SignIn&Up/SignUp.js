@@ -1,6 +1,6 @@
 import React from 'react';
 import './SignUp.css'
-import WithClass from '../../hoc/WithClass'
+
 class SignUp extends React.Component
 {
     render()

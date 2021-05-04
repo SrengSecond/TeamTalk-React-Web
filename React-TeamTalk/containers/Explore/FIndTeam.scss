@@ -1,0 +1,52 @@
+.join-team
+{
+  margin:10px;
+  border-radius: 25px;
+  padding:25px 15px;
+  background-color:#fff;
+  display: flex;
+
+  .join-team-wrapper
+  {
+    text-align:center;
+    h1
+    {
+      margin-bottom: 16px;
+    }
+    .text-div
+    {
+      display: flex;
+      align-items:center;
+      width:300px;
+      height: 100px;
+      p
+      {
+        font-family: 'Open Sans', sans-serif;
+      }
+    }
+
+    .findTeam-button
+    {
+      margin-top: 16px;
+      padding: 10px 30px;
+      border-radius: 10px;
+      outline: none;
+      border: 2px solid var(--home_primary);
+
+      font-size: 18px;
+      color: #fff;
+      cursor: pointer;
+      background-color: var(--home_primary);
+
+      &:hover
+      {
+        transition: all 0.3s ease-in-out;
+        background-color: #fff;
+        color: var(--home_primary);
+        border-radius: 10px;
+
+        border: 2px solid var(--home_primary)
+      }
+    }
+  }
+}

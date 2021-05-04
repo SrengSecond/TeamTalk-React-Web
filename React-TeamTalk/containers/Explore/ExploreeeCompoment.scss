@@ -1,0 +1,29 @@
+.ExploreCompoment-div
+{
+  display: flex;
+  background-color: #0B111D;
+  height:100vh;
+  justify-content: center;
+  align-items: center;
+  background-position:center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  div
+  {
+    .title-name
+    {
+
+      text-align: center;
+      h1
+      {
+        font-size:52px;
+        color: #fff;
+      }
+    }
+    .explore-Item
+    {
+      margin-top: 50px;
+      display: flex;
+    }
+  }
+}

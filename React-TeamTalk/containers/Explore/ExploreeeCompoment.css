@@ -1,0 +1,23 @@
+.ExploreCompoment-div {
+  display: flex;
+  background-color: #0B111D;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ExploreCompoment-div div .title-name {
+  text-align: center;
+}
+.ExploreCompoment-div div .title-name h1 {
+  font-size: 52px;
+  color: #fff;
+}
+.ExploreCompoment-div div .explore-Item {
+  margin-top: 50px;
+  display: flex;
+}
+
+/*# sourceMappingURL=ExploreeeCompoment.css.map */
