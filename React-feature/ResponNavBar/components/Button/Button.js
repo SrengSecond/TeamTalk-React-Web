@@ -1,13 +1,13 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link';
 import './Button.css'
 const Button = () => {
     return (
-        <Link to={'/sign-up'}>
+        <HashLink smooth to={'#sign-up'}>
             <button className={'btn'}>
-                Sign Up
+                Sign In
             </button>
-        </Link>
+        </HashLink>
     );
 };
 

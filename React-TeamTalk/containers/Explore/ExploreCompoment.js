@@ -4,7 +4,7 @@ import './ExploreeeCompoment.css'
 const ExploreCompoment = () =>
 {
     return(
-        <div className="ExploreCompoment-div">
+        <div className="ExploreCompoment-div" id={"explore"}>
             <div>
                 <div className="title-name">
                     <h1>Explore TeamTalk</h1>

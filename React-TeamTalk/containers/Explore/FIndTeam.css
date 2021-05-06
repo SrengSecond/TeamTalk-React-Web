@@ -3,6 +3,7 @@
   border-radius: 25px;
   padding: 25px 15px;
   background-color: #fff;
+  height: 350px;
   display: flex;
 }
 .join-team .join-team-wrapper {
@@ -12,6 +13,7 @@
   margin-bottom: 16px;
 }
 .join-team .join-team-wrapper .text-div {
+  margin: 25px 0 35px 0;
   display: flex;
   align-items: center;
   width: 300px;

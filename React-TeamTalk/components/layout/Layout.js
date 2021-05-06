@@ -11,28 +11,20 @@ import DeveloperUpdate from "../../../React-feature/ResponNavBar/components/Page
 import Form from "../../../React-feature/ResponNavBar/components/Page/Form";
 import Community from "../../../React-feature/ResponNavBar/components/Page/Community";
 import ExploreCompoment from "../../containers/Explore/ExploreCompoment";
+import FectData from "../Network/FectData";
+
 
 function Layout(props) {
     return (
         <Aux>
             <Router>
+                {/*<FectData/>*/}
                 <div>
                     <Navbar/>
-{/*                    <Switch>
-                        <Route path={'/'} exact component={Home}/>
-                        <Route path={'/about-us'} exact component={About}/>
-                        <Route path={'/help'} exact component={Help}/>
-                        <Route path={'/sign-up'} exact component={SignUp}/>
-                        <Route path={'/what-new'} exact component={WhatNew}/>
-                        <Route path={'/dev-update'} exact component={DeveloperUpdate}/>
-                        <Route path={'/form'} exact component={Form}/>
-                        <Route path={'/community'} exact component={Community}/>
-                    </Switch>*/}
                 </div>
                 <main className={'layout-main'}>
                     {props.children}
                 </main>
-
             </Router>
         </Aux>
     );

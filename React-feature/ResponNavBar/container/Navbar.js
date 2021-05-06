@@ -3,6 +3,7 @@ import React,{useState} from 'react';
 import WithClass from '../hoc/WithClass'
 import Aux from '../hoc/Auxs'
 import {Link} from 'react-router-dom'
+import {HashLink} from "react-router-hash-link";
 import Dropdown from "./Dropdown";
 import Button from "../components/Button/Button";
 
@@ -48,9 +49,9 @@ function Navbar ()
     return (
         <Aux>
                 <nav className={"navbar"}>
-                    <Link className={"navbar-logo"} to={'/'}>
+                    <HashLink smooth className={"navbar-logo"} to={'#'}>
                         <i className="fas fa-user-astronaut"/> TeamTalk.
-                    </Link>
+                    </HashLink>
 
                     <div className={"menu-icon"}
                          onClick={handleClick}>
@@ -90,7 +91,7 @@ function Navbar ()
                             <Link className={"nav-links-mobile"}
                                   onClick={handleMobileMenus}
                                   to={'/sign-up'}>
-                                Sign Up
+                                Sign In
                             </Link>
                         </li>
                     </ul>

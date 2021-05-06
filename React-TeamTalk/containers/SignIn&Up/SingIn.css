@@ -77,4 +77,8 @@
   border: 2px solid var(--pink_primary);
 }
 
+.title h5 {
+  font-size: 25px;
+}
+
 /*# sourceMappingURL=SingIn.css.map */

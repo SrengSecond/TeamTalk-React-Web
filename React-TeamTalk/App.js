@@ -1,4 +1,4 @@
-import React from 'react';
+    import React from 'react';
 import Layout from "./components/layout/Layout";
 import './App.css'
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
@@ -13,17 +13,11 @@ const App = () =>
     return (
         <Router>
             <Layout>
-                    <Switch>
-                        <Route path={"/"} exact component={Home}/>
-                        <Route path={"/explore"} component={ExploreCompoment}/>
-                        <Route path={"/sign-up"} component={LogInOut}/>
-                    </Switch>
-                    {/*<Home/>*/}
-                    {/*<ExploreCompoment/>*/}
-                    {/*<LogInOut/>*/}
+                {/*<Home/>*/}
+                {/*<ExploreCompoment/>*/}
+                {/*<LogInOut/>*/}
             </Layout>
         </Router>
-
     );
 };
 
