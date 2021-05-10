@@ -1,5 +1,33 @@
 .left-detail .top-left-detail h2 {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+}
+.left-detail .bottom-left-detail {
+  margin: 10px 0;
+}
+.left-detail .bottom-left-detail .text-div {
+  margin: 15px 0 10px 0;
+}
+
+.right-detail .top-right-detail {
+  margin-top: 45px;
+}
+.right-detail .top-right-detail .double-div {
+  margin-bottom: 5px;
+}
+.right-detail .top-right-detail .text-div {
+  margin-bottom: 5px;
+}
+.right-detail .middle-right-detail {
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #6A6A6A;
+}
+.right-detail .middle-right-detail p {
+  color: var(--primary_gray);
+}
+
+.middle-detail {
+  display: flex;
 }
 
 .small-text-div .text-div p {
@@ -12,6 +40,9 @@
 
 .small-text-div .text-div p {
   margin: 2px 0;
+}
+.small-text-div .text-div .value-holder {
+  margin-left: 3px;
 }
 
 .middle-left-detail-activity {

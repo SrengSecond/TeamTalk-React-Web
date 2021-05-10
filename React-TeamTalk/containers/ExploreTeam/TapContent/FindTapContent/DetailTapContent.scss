@@ -58,17 +58,22 @@
 .middle-left-detail
 {
   display: flex;
+  .activity_icon
+  {
+    background-color: #fff;
+    border: 2px solid var(--primary_gray)
+  }
 }
 .DetailTapContent
 {
   display: flex;
-  padding:15px;
+  padding:15px 15px 5px 15px;
   .left-detail
   {
 
   }
   .right-detail
   {
-    margin-left: 10px;
+    margin-left: 80px;
   }
 }
