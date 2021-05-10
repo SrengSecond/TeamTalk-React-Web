@@ -10,7 +10,7 @@ const ExploreCompoment = () =>
                     <h1>Explore TeamTalk</h1>
                 </div>
 
-                <div className={"explore-Item"}>
+                <div  className={"explore-Item"}>
                     <FindTeam title={"TalkMore"}
                               description={"At there, you can freely seek any answer in response to your question as well as help answer others’."}
                               button={"Explore Talk"}/>

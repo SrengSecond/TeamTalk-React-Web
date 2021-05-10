@@ -1,0 +1,41 @@
+:root
+{
+  //--primary_gray_background:#e9eeec;
+  --primary_gray_background:#EBEBEB;
+}
+.HeaderTap
+{
+  margin-top:70px;
+  .headerTap-Content
+  {
+    display: flex;
+    .tap-item-div
+    {
+      background-color: var(--primary);
+      padding:10px;
+      width:100px;
+      text-align: center;
+      .tap-item
+      {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+  .tap-container
+  {
+    display: flex;
+
+    .tap-content
+    {
+      //padding:10px;
+      //background-color: var(--primary_gray_background);
+    }
+  }
+}
+.test_flex
+{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}

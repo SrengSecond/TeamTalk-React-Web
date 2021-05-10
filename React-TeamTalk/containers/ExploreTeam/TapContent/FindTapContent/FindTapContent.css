@@ -1,0 +1,63 @@
+:root {
+  --primary_gray:#6A6A6A ;
+}
+
+.TagCollection {
+  width: 470px;
+  height: 600px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.TagCollection .list_content {
+  padding: 15px 15px 15px 15px;
+  display: flex;
+  align-items: start;
+  background-color: #fff;
+  border-left: 10px solid transparent;
+}
+.TagCollection .list_content .Left-content {
+  margin-right: 10px;
+}
+.TagCollection .list_content .Left-content .description_location {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  color: var(--primary_gray);
+}
+.TagCollection .list_content .Left-content .tag {
+  margin-right: 5px;
+}
+.TagCollection .list_content .Left-content .description_post {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.TagCollection .list_content .Left-content .description_post .text_dev {
+  display: flex;
+}
+.TagCollection .list_content .Left-content .description_post .text_dev .text_placeholder {
+  font-family: "Open Sans", sans-serif;
+  color: var(--primary_gray);
+  font-size: 12px;
+  margin-right: 5px;
+}
+.TagCollection .list_content .Left-content .description_post .text_dev .text_data {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  font-size: 12px;
+  margin-right: 16px;
+}
+.TagCollection .list_content .Right-content {
+  display: flex;
+}
+.TagCollection .list_content .Right-content .activity_icon {
+  border: 2px solid var(--primary_gray);
+  border-radius: 2px;
+  width: 120px;
+  height: 100%;
+  padding: 5px;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=FindTapContent.css.map */

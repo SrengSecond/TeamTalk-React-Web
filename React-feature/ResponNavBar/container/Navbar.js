@@ -91,7 +91,7 @@ function Navbar ()
                             <Link className={"nav-links-mobile"}
                                   onClick={handleMobileMenus}
                                   to={'/sign-up'}>
-                                Sign In
+                                LOG IN
                             </Link>
                         </li>
                     </ul>

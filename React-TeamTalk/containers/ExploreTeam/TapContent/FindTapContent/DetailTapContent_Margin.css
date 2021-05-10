@@ -1,0 +1,21 @@
+.left-detail .top-left-detail h2 {
+  padding-bottom: 10px;
+}
+
+.small-text-div .text-div p {
+  font-size: 12px;
+}
+.big-text-div .text-div p {
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.small-text-div .text-div p {
+  margin: 2px 0;
+}
+
+.middle-left-detail-activity {
+  margin-left: 15px;
+}
+
+/*# sourceMappingURL=DetailTapContent_Margin.css.map */

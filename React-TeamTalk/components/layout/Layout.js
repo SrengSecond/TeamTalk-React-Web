@@ -11,14 +11,18 @@ import DeveloperUpdate from "../../../React-feature/ResponNavBar/components/Page
 import Form from "../../../React-feature/ResponNavBar/components/Page/Form";
 import Community from "../../../React-feature/ResponNavBar/components/Page/Community";
 import ExploreCompoment from "../../containers/Explore/ExploreCompoment";
-import FectData from "../Network/FectData";
+import Axios from "../Axios/Axios";
+import HttpRequest from "../Axios/HttpRequest";
 
 
-function Layout(props) {
+
+function Layout(props)
+{
     return (
         <Aux>
             <Router>
-                {/*<FectData/>*/}
+                {/*<Axios/>*/}
+                {/*<HttpRequest/>*/}
                 <div>
                     <Navbar/>
                 </div>

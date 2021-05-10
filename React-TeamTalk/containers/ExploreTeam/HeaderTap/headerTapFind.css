@@ -1,0 +1,26 @@
+.headerTap_Find {
+  display: flex;
+  flex-direction: column;
+}
+.headerTap_Find .header .headerTapContent {
+  width: 1200px;
+  padding: 10px;
+  background-color: var(--primary_gray_background);
+}
+.headerTap_Find .header .headerTapContent .headerTap_Find_top {
+  display: flex;
+}
+.headerTap_Find .header .headerTapContent .headerTap_Find_top .SearchDiv {
+  flex-grow: 1;
+}
+.headerTap_Find .mainContent {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: 10px;
+  background-color: #EBEBEB;
+}
+.headerTap_Find .mainContent .list {
+  display: flex;
+}
+
+/*# sourceMappingURL=headerTapFind.css.map */

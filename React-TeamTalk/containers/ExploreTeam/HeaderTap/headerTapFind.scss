@@ -1,0 +1,42 @@
+.headerTap_Find
+{
+  display:flex;
+  flex-direction: column;
+  .header
+  {
+    //position: fixed;
+    .headerTapContent
+    {
+      width:1200px;
+      padding:10px;
+      background-color: var(--primary_gray_background);
+
+      .headerTap_Find_top
+      {
+        display:flex;
+        .SearchDiv
+        {
+          flex-grow: 1;
+        }
+      }
+      .headerTap_Find_bottom
+      {
+
+      }
+    }
+  }
+
+  .mainContent
+  {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    //padding:10px;
+    margin-top: 10px;
+    background-color: #EBEBEB;
+    .list
+    {
+      display: flex;
+    }
+  }
+
+}

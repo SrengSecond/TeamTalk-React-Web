@@ -1,0 +1,30 @@
+:root {
+  --primary_gray_background:#EBEBEB;
+}
+
+.HeaderTap {
+  margin-top: 70px;
+}
+.HeaderTap .headerTap-Content {
+  display: flex;
+}
+.HeaderTap .headerTap-Content .tap-item-div {
+  background-color: var(--primary);
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}
+.HeaderTap .headerTap-Content .tap-item-div .tap-item {
+  text-decoration: none;
+  color: #fff;
+}
+.HeaderTap .tap-container {
+  display: flex;
+}
+.test_flex {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=headerTap.css.map */

@@ -5,7 +5,7 @@ const Button = () => {
     return (
         <HashLink smooth to={'#sign-up'}>
             <button className={'btn'}>
-                Sign In
+                Log In
             </button>
         </HashLink>
     );

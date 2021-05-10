@@ -1,0 +1,23 @@
+.create_button
+{
+  margin-left: 16px;
+  width:200px;
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: 2px solid var(--home_primary);
+
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--home_primary);
+
+  &:hover
+  {
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    color: var(--home_primary);
+    border-radius: 4px;
+
+  }
+}

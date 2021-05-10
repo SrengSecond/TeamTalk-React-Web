@@ -1,5 +1,6 @@
 import React from 'react';
 import './FIndTeam.css'
+import {Link} from "react-router-dom";
 const FindTeam = (props) => {
     return (
         <div className="join-team">
@@ -8,7 +9,9 @@ const FindTeam = (props) => {
                 <div className="text-div">
                     <p>{props.description}</p>
                 </div>
-                <button className={"findTeam-button"}>{props.button}</button>
+                <Link to={"/find_team"}>
+                    <button  className={"findTeam-button"}>{props.button}</button>
+                </Link>
             </div>
         </div>
     );

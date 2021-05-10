@@ -3,7 +3,7 @@ class Header extends React.Component
 {
     componentWillUnmount()
     {
-        //console.log('[Header.js] componentWillUnmount: Doing Clean up')
+        //console.log('[headerTap.js] componentWillUnmount: Doing Clean up')
     }
 
     render()

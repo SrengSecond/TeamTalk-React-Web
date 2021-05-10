@@ -1,0 +1,56 @@
+.top-right-detail .first-text-div {
+  display: flex;
+}
+.top-right-detail .first-text-div .value-holder {
+  margin-left: 5px;
+}
+.top-right-detail .second-text-div {
+  display: flex;
+}
+.top-right-detail .second-text-div .value-holder {
+  margin-left: 5px;
+}
+.top-right-detail .second-text-div .label {
+  margin-left: 20px;
+}
+
+.double-div {
+  display: flex;
+}
+
+.value-holder {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+}
+
+.label {
+  color: var(--primary_gray);
+  font-family: "Open Sans", sans-serif;
+}
+
+.activity_icon {
+  width: 85px;
+  height: 85px;
+  border: 1px solid var(--primary_gray);
+}
+
+.text-div {
+  display: flex;
+}
+.text-div .value-holder {
+  margin-left: 5px;
+}
+
+.middle-left-detail {
+  display: flex;
+}
+
+.DetailTapContent {
+  display: flex;
+  padding: 15px;
+}
+.DetailTapContent .right-detail {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=DetailTapContent.css.map */
