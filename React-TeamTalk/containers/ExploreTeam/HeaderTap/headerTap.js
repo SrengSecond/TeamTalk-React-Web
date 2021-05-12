@@ -17,7 +17,7 @@ function HeaderTap(props)
                     </div>
                 </div>
 
-                    <div className={"tap-container"} >
+                    <div className={"tap-container"}>
                         <div className={"tap-content"}>
                             <Route path={'/find_team'} component={HeaderTapFind}/>
                             <Route path={'/my_team'} component={HeaderTapMy}/>

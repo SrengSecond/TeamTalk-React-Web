@@ -1,9 +1,13 @@
 .ExploreTeamDashBoard {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #0B111D;
+  align-items: start;
+  background-image: url(../../assets/image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg);
+  background-color: rgba(11, 17, 29, 0.25);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=ExploreTeamDashBoard.css.map */

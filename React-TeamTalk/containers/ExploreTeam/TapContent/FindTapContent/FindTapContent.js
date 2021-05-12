@@ -6,7 +6,7 @@ import ListContent from "./ListContent/ListContent";
 
 function FindTapContent(props) {
     return (
-        <div className={"TagCollection"}>
+        <div className={"FindTapContent"}>
             <ListContent/>
             <ListContent/>
             <ListContent/>
@@ -17,14 +17,14 @@ function FindTapContent(props) {
             <ListContent/>
             <ListContent/>
             <ListContent/>
-            <ListContent/>
-            <ListContent/>
-            <ListContent/>
-            <ListContent/>
-            <ListContent/>
-            <ListContent/>
-            <ListContent/>
-            <ListContent/>
+            {/*<ListContent/>*/}
+            {/*<ListContent/>*/}
+            {/*<ListContent/>*/}
+            {/*<ListContent/>*/}
+            {/*<ListContent/>*/}
+            {/*<ListContent/>*/}
+            {/*<ListContent/>*/}
+            {/*<ListContent/>*/}
 
         </div>
     );

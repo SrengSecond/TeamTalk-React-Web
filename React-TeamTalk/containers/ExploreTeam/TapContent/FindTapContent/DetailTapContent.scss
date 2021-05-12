@@ -1,3 +1,10 @@
+.DetailTap-Content-div
+{
+  flex-grow: 1;
+  margin-left: 5px;
+  background-color: rgb( 10, 14, 43,0.5);
+
+}
 .top-right-detail
 {
   .first-text-div
@@ -43,8 +50,8 @@
 }
 .activity_icon
 {
-  width:85px;
-  height:85px;
+  width:80px;
+  height:80px;
   border: 1px solid var(--primary_gray);
 }
 .text-div
@@ -64,7 +71,20 @@
     border: 2px solid var(--primary_gray)
   }
 }
-.DetailTapContent
+.DetailTap-Content-block-div
+{
+  background-color: rgba(255, 255, 255,1);
+  position:sticky;
+  top:80px;
+  margin-bottom: 10px;
+
+}
+.bottom-detail
+{
+
+}
+
+.top-detail
 {
   display: flex;
   padding:15px 15px 5px 15px;

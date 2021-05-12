@@ -1,14 +1,17 @@
 .ExploreTeamDashBoard
 {
-  height: 100vh;
+  //height: 100vh;
   //margin-top: 90px;
+
+  min-height:100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #0B111D;
-  //background-image: url(../../assets/image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg);
+  align-items: start;
+  background-image: url(../../assets/image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg);
+  background-color: rgba(11, 17, 29, 0.25);
+  background-blend-mode:multiply;
   //background-position:center;
-  //background-size: cover;
-  //background-repeat:no-repeat;
+  background-size: cover;
+  background-repeat:no-repeat;
 
 }

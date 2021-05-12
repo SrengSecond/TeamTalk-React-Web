@@ -1,0 +1,39 @@
+.Member {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  background-color: #fff;
+}
+.Member img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--primary_gray);
+  margin-left: 2.5px;
+  border-radius: 2.5px;
+}
+.Member .txt-div {
+  margin-left: 5px;
+}
+.Member .txt-div .name {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+.Member .txt-div p {
+  font-size: 8px;
+  color: var(--primary_gray);
+  font-family: "Open Sans", sans-serif;
+}
+.Member .txt-div .placeholder {
+  color: black;
+  margin-left: 5px;
+}
+
+.txt-mini-div {
+  display: flex;
+}
+.txt-mini-div p {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=Member.css.map */

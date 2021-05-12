@@ -10,6 +10,7 @@ function DetailTextFields(props)
             '& .MuiTextField-root': {
                 margin: theme.spacing(1),
                 width: /*'30ch'*/`${props.width}`,
+                // height:`${props.height}`
             },
         },
     }));
