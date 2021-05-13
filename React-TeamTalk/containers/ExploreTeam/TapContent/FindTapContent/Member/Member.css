@@ -1,28 +1,26 @@
 .Member {
   display: flex;
   align-items: center;
-  margin: 10px 0;
-  background-color: #fff;
+  border-bottom: 1px solid var(--primary_gray_border);
+  margin-bottom: 5px;
 }
 .Member img {
   width: 40px;
   height: 40px;
-  border: 1px solid var(--primary_gray);
-  margin-left: 2.5px;
-  border-radius: 2.5px;
+  margin: 5px;
 }
 .Member .txt-div {
   margin-left: 5px;
 }
 .Member .txt-div .name {
   font-size: 14px;
-  font-weight: bold;
   color: black;
 }
 .Member .txt-div p {
-  font-size: 8px;
+  padding: 2px 0;
+  font-size: 10px;
   color: var(--primary_gray);
-  font-family: "Open Sans", sans-serif;
+  font-family: "inter", "sans-serif";
 }
 .Member .txt-div .placeholder {
   color: black;
@@ -31,9 +29,14 @@
 
 .txt-mini-div {
   display: flex;
+  margin-right: 10px;
 }
 .txt-mini-div p {
   font-size: 14px;
+}
+
+.txt-mini {
+  display: flex;
 }
 
 /*# sourceMappingURL=Member.css.map */

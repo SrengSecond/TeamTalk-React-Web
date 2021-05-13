@@ -1,0 +1,15 @@
+.memberIcon-active {
+  color: var(--primary);
+}
+.memberIcon-active i {
+  margin-right: 4px;
+}
+
+.memberIcon-inactive {
+  color: var(--primary_gray);
+}
+.memberIcon-inactive i {
+  margin-right: 4px;
+}
+
+/*# sourceMappingURL=MemberIcon.css.map */

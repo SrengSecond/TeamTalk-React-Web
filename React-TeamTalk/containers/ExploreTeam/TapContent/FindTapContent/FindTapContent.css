@@ -8,8 +8,9 @@
 .FindTapContent .list_content {
   padding: 15px 15px 15px 15px;
   display: flex;
-  align-items: start;
   background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
   border-left: 10px solid transparent;
 }
 .FindTapContent .list_content .Left-content {
@@ -49,12 +50,12 @@
   display: flex;
 }
 .FindTapContent .list_content .Right-content .activity_icon {
-  border: 2px solid var(--primary_gray);
-  border-radius: 2px;
-  width: 120px;
+  border: none;
+  border-radius: 3px;
+  width: 100px;
   height: 100%;
   padding: 5px;
-  background-color: #fff;
+  background-color: var(--primary_gray_background);
 }
 
 /*# sourceMappingURL=FindTapContent.css.map */

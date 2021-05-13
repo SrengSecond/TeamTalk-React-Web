@@ -1,8 +1,18 @@
+:root {
+  --primary_gray_border:#C4C4C4;
+  --primary_gray_border_txt:#757575;
+}
+
 .Members {
-  border-radius: 5px;
-  margin: 10px;
-  padding: 0.1px 10px 0.1px 10px;
-  background-color: var(--primary_gray_background);
+  margin: 10px 15px 10px 15px;
+  padding: 10px 10px 5px 10px;
+  border: 1px solid var(--primary_gray_border);
+  border-radius: 3px;
+}
+.Members .current-member-number {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=Members.css.map */

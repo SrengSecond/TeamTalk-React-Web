@@ -3,16 +3,16 @@
   display: flex;
   //margin-bottom: 10px;
   align-items: center;
-  margin: 10px 0;
-  background-color:#fff;
+  //margin: 10px 0;
+  //border:1px solid var(--primary_gray);
+  border-bottom: 1px solid var(--primary_gray_border);
+  margin-bottom: 5px;
   img
   {
     //background-color: var(--primary_gray-background);
     width:40px;
     height: 40px;
-    border: 1px solid var(--primary_gray);
-    margin-left:2.5px;
-    border-radius:2.5px;
+    margin:5px
   }
   .txt-div
   {
@@ -20,14 +20,15 @@
     .name
     {
       font-size: 14px;
-      font-weight: bold;
+
       color: black;
     }
     p
     {
-      font-size:8px;
+      padding:2px 0;
+      font-size:10px;
       color:var(--primary_gray);
-      font-family: "Open Sans", sans-serif;
+      font-family:"inter","sans-serif";
     }
     .placeholder
     {
@@ -40,9 +41,13 @@
 .txt-mini-div
 {
   display: flex;
+  margin-right: 10px;
   p
   {
     font-size:14px;
   }
 }
-
+.txt-mini
+{
+  display: flex;
+}

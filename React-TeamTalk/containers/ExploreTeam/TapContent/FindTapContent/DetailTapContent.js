@@ -6,11 +6,15 @@ import ChipInput from 'material-ui-chip-input'
 import TagCollection from "./TagCollection/TagCollection";
 import MultilineTextFields from "./DetailTextFields/DetailTextFields";
 import DatePicker from "./TimeDatePicker/DatePicker";
-import icon from './icon/learning.png'
+import icon from './icon/lab_Color.png'
 import Members from "./Member/Members";
+import MemberIcons from "./MemberIcon/MemberIcons";
+import Scrollbar from "react-scrollbars-custom";
 
 function DetailTapContent(props)
 {
+    const exmapleMember = ["Sreng","Sal","Sal",null,null,null,null];
+
     const [yourChips,setChip] = useState()
 
     const handleAddChip = (chip) =>
@@ -111,12 +115,16 @@ function DetailTapContent(props)
                     </div>
                 </div>
                 <div className="middle-detail">
-                    <MultilineTextFields title={"Description"} width={"50ch"}  placeholderTxt={"Describe something about this team..."}/>
-                    <MultilineTextFields title={"Required"} width={"25ch"}  placeholderTxt={"what is the required for team"}/>
+                    <MultilineTextFields title={"Description"} marginLeftIn={2} width={"49.7ch"}  placeholderTxt={"Describe something about this team..."}/>
+                    <MultilineTextFields title={"Required"} marginLeftIn={1}   width={"25ch"}  placeholderTxt={"what is the required for team"}/>
                 </div>
                 <div className="bottom-detail">
-                    <p>Member:3/5</p>
+                    <div className="member_label">
+                        <p className="current-member-number">Member</p>
+                        <MemberIcons className="member_list" member={exmapleMember}/>
+                    </div>
                     <Members/>
+
                 </div>
             </div>
         </div>

@@ -8,8 +8,11 @@ function DetailTextFields(props)
     const useStyles = makeStyles((theme) => ({
         root: {
             '& .MuiTextField-root': {
+
                 margin: theme.spacing(1),
+                marginLeft: theme.spacing(props.marginLeftIn),
                 width: /*'30ch'*/`${props.width}`,
+
                 // height:`${props.height}`
             },
         },

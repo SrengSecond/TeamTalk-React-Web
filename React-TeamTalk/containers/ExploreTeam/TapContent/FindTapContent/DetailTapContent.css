@@ -51,8 +51,10 @@
   display: flex;
 }
 .middle-left-detail .activity_icon {
-  background-color: #fff;
-  border: 2px solid var(--primary_gray);
+  background-color: var(--primary_gray_background);
+  border: none;
+  padding: 5px;
+  margin: 5px;
 }
 
 .DetailTap-Content-block-div {
@@ -62,12 +64,23 @@
   margin-bottom: 10px;
 }
 
+.bottom-detail .member_label {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.bottom-detail .member_label .current-member-number {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  margin-left: 30px;
+  margin-right: 10px;
+  color: var(--primary_gray);
+}
 .top-detail {
   display: flex;
   padding: 15px 15px 5px 15px;
 }
 .top-detail .right-detail {
-  margin-left: 80px;
+  margin-left: 105px;
 }
 
 /*# sourceMappingURL=DetailTapContent.css.map */

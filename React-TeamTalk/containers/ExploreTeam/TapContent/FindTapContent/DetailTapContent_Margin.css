@@ -2,7 +2,7 @@
   padding-bottom: 15px;
 }
 .left-detail .bottom-left-detail {
-  margin: 10px 0;
+  margin-top: 20px;
 }
 .left-detail .bottom-left-detail .text-div {
   margin: 15px 0 10px 0;
@@ -20,7 +20,7 @@
 .right-detail .middle-right-detail {
   border-radius: 5px;
   padding: 5px;
-  border: 1px solid #6A6A6A;
+  border: 1px solid var(--primary_gray_border);
 }
 .right-detail .middle-right-detail p {
   color: var(--primary_gray);
@@ -29,7 +29,6 @@
 .middle-detail {
   display: flex;
 }
-
 .small-text-div .text-div p {
   font-size: 12px;
 }
