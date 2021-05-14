@@ -9,15 +9,15 @@ function Members(props) {
         <div>
 
             <div className="Members">
-                <Scrollbar style={{ height:170 }}>
+                <Scrollbar style={{ height:225 }}>
 
                     <Member  name={"MonsterHunter"} iconUrl={icon} department={"ITED"} role={"Programmer"}/>
                     <Member  name={"MonsterHunter"} iconUrl={icon} department={"ITED"} role={"Programmer"}/>
                     <Member  name={"MonsterHunter"} iconUrl={icon} department={"ITED"} role={"Programmer"}/>
                     <Member  name={"MonsterHunter"} iconUrl={icon} department={"ITED"} role={"Programmer"}/>
-                    <Member  name={"MonsterHunter"} iconUrl={icon} department={"ITED"} role={"Programmer"}/>
-                    <Member  name={"MonsterHunter"} iconUrl={icon} department={"ITED"} role={"Programmer"}/>
-                    <Member  name={"MonsterHunter"} iconUrl={icon} department={"ITED"} role={"Programmer"}/>
+                    {/*<Member  name={"MonsterHunter"} iconUrl={icon} department={"ITED"} role={"Programmer"}/>*/}
+                    {/*<Member  name={"MonsterHunter"} iconUrl={icon} department={"ITED"} role={"Programmer"}/>*/}
+                    {/*<Member  name={"MonsterHunter"} iconUrl={icon} department={"ITED"} role={"Programmer"}/>*/}
                     {/*<Member  name={"MonsterHunter"} iconUrl={icon} department={"ITED"} role={"Programmer"}/>*/}
                     {/*<Member  name={"Ly Sreng"} iconUrl={icon} department={"ITED"} role={"Programmer"}/>*/}
                     {/*<Member  name={"KrazyEcho"} iconUrl={icon} department={"ITED"} role={"Programmer"}/>*/}

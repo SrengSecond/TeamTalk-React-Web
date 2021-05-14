@@ -10,6 +10,7 @@ import icon from './icon/lab_Color.png'
 import Members from "./Member/Members";
 import MemberIcons from "./MemberIcon/MemberIcons";
 import Scrollbar from "react-scrollbars-custom";
+import FooterBar from "../../Footer/FooterBar";
 
 function DetailTapContent(props)
 {
@@ -114,18 +115,20 @@ function DetailTapContent(props)
 
                     </div>
                 </div>
+
                 <div className="middle-detail">
                     <MultilineTextFields title={"Description"} marginLeftIn={2} width={"49.7ch"}  placeholderTxt={"Describe something about this team..."}/>
                     <MultilineTextFields title={"Required"} marginLeftIn={1}   width={"25ch"}  placeholderTxt={"what is the required for team"}/>
                 </div>
+
                 <div className="bottom-detail">
                     <div className="member_label">
                         <p className="current-member-number">Member</p>
                         <MemberIcons className="member_list" member={exmapleMember}/>
                     </div>
                     <Members/>
-
                 </div>
+                <FooterBar/>
             </div>
         </div>
     );

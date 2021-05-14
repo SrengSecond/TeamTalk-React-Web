@@ -1,0 +1,26 @@
+.footer_bar {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--primary);
+  color: #fff;
+}
+.footer_bar p {
+  text-align: center;
+  flex-grow: 1;
+  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+  padding: 15px 0;
+  font-size: 19px;
+}
+.footer_bar p i {
+  margin-right: 10px;
+}
+.footer_bar p:hover {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: #E74895;
+}
+
+/*# sourceMappingURL=FooterBar.css.map */
