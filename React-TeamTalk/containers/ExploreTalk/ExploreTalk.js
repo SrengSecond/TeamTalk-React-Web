@@ -1,11 +1,11 @@
 import React from 'react';
 
-function FindTeam(props) {
+function ExploreTalk(props) {
     return (
         <div>
-            FindTeam
+
         </div>
     );
 }
 
-export default FindTeam;
+export default ExploreTalk;

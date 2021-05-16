@@ -7,8 +7,7 @@ import FilterBar from "./FilterBar/filterBar";
 function HeaderTapMy(props) {
     return (
         <div>
-            My Team
-            <FilterBar/>
+
         </div>
     );
 }

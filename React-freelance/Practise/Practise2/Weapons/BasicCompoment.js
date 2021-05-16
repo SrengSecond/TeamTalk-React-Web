@@ -73,7 +73,6 @@ function BaseComponent(props)
             handleLogin={props.handleLogin}
             add={props.add}
             validInput={props.validInput}
-
         />
         )
     }

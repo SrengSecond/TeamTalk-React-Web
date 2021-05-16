@@ -49,9 +49,9 @@ function Navbar ()
     return (
         <Aux>
                 <nav className={"navbar"}>
-                    <HashLink smooth className={"navbar-logo"} to={'#'}>
+                    <Link className={"navbar-logo"} to={'/home'}>
                         <i className="fas fa-user-astronaut"/> TeamTalk.
-                    </HashLink>
+                    </Link>
 
                     <div className={"menu-icon"}
                          onClick={handleClick}>
@@ -59,30 +59,31 @@ function Navbar ()
                     </div>
 
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
+
                         <li className={"nav-item"}>
-                            <Link className={"nav-links"}
+                            <HashLink smooth className={"nav-links"}
                                   onClick={handleMobileMenus}
-                                  to={'/about-us'}>
+                                  to={'#'}>
                                 About Us
-                            </Link>
+                            </HashLink >
                         </li>
 
                         <li className={"nav-item"}
                             onMouseEnter={OnMouseEnter}
                             onMouseLeave={OnMouseLeave}
                         >
-                            <Link className={"nav-links"}
+                            <HashLink smooth className={"nav-links"}
                                   onClick={handleMobileMenus}
-                                  to={'/community'}>
-                                Community <i className={"fas fa-caret-down"}/>
-                            </Link>
+                                  to={'#explore'}>
+                                Explore <i className={"fas fa-caret-down"}/>
+                            </HashLink>
                             {dropdown && <Dropdown/>}
                         </li>
 
                         <li className={"nav-item"}>
                             <Link className={"nav-links"}
                                   onClick={handleMobileMenus}
-                                  to={'/help'}>
+                                  to={'/home'}>
                                 Help
                             </Link>
                         </li>

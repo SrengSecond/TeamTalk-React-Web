@@ -3,7 +3,7 @@ import './MemberIcon.css'
 function MemberIcon(props) {
     return (
         <div className={props.classes}>
-            <i className="fas fa-user-astronaut fa-sm"/>
+            <i className={`fas fa-user-astronaut ${props.fontSize}`}/>
         </div>
     );
 }

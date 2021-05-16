@@ -1,7 +1,6 @@
 
 import React, {Component} from 'react';
-import FindTeam from "./FindTeam/FindTeam";
-import MyTeam from "./MyTeam/MyTeam";
+
 import HeaderTap from "./HeaderTap/headerTap";
 import './ExploreTeamDashBoard.css'
 

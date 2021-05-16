@@ -124,7 +124,7 @@ function DetailTapContent(props)
                 <div className="bottom-detail">
                     <div className="member_label">
                         <p className="current-member-number">Member</p>
-                        <MemberIcons className="member_list" member={exmapleMember}/>
+                        <MemberIcons fontSize={"fa-lg"} className="member_list" member={exmapleMember}/>
                     </div>
                     <Members/>
                 </div>

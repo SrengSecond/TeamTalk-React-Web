@@ -12,7 +12,7 @@ function MemberIcons(props)
             {
                 return (
                     <div key={index}>
-                        <MemberIcon classes={each != null?"memberIcon-active" : "memberIcon-inactive"}/>
+                        <MemberIcon fontSize={props.fontSize} classes={each != null?"memberIcon-active" : "memberIcon-inactive"}/>
                     </div>
                 )
             })}

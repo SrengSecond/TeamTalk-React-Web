@@ -2,19 +2,19 @@
 const MenuItems =
     [
         {
-            title: 'What is new?',
-            path: '/what-new',
+            title: 'FindTeam',
+            path: '/find_team',
             cName: 'dropdown-link'
         },
         {
-            title: 'Developer Update',
-            path: '/dev-update',
+            title: 'TalkMore',
+            path: '/talk_more',
             cName: 'dropdown-link'
         },
 
         {
-            title: 'Form',
-            path: '/form',
+            title: 'Update',
+            path: '/update',
             cName: 'dropdown-link'
         }
     ]

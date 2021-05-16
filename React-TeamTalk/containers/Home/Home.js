@@ -3,9 +3,12 @@ import './Home.css'
 import ExploreCompoment from "../Explore/ExploreCompoment";
 import Layout from "../../components/layout/Layout";
 import {HashLink} from "react-router-hash-link";
+import axios from "axios";
 
 class Home extends React.Component
 {
+
+
     render()
     {
          return(

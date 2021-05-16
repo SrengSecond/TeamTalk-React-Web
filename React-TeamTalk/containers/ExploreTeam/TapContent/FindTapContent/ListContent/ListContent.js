@@ -14,7 +14,7 @@ function ListContent(props)
                     <h2 className={"main_title"}>Tower of Hanoi Simulation</h2>
                     <p className={"description_location"}>ITE - Project Research</p>
                     <TagCollection/>
-                    <MemberIcons member={exmapleMember}/>
+                    <MemberIcons fontSize={"fa-sm"} member={exmapleMember}/>
                     <div className={"description_post"}>
 
                         <div className={"text_dev"}>

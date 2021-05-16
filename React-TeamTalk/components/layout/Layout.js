@@ -14,8 +14,6 @@ import ExploreCompoment from "../../containers/Explore/ExploreCompoment";
 import Axios from "../Axios/Axios";
 import HttpRequest from "../Axios/HttpRequest";
 
-
-
 function Layout(props)
 {
     return (

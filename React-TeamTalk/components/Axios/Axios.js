@@ -12,7 +12,7 @@ const loginApi = axios.create(
 
 class Axios extends Component
 {
-    l
+
     state={
 
         user:[],
