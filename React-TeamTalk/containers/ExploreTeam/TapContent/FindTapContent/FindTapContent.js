@@ -6,7 +6,7 @@ function FindTapContent(props)
 {
 
     return (
-        <div className={"ListContent"}>
+        <div className={"FindTapContent"}>
             {props.dataSet.map((each,index) =>
             {
                 return(
