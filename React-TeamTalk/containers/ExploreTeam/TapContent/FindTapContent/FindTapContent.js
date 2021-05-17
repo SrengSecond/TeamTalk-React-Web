@@ -7,10 +7,10 @@ function FindTapContent(props)
 
     return (
         <div className={"FindTapContent"}>
-            {props.dataSet.map((each,index) =>
+            {props.dataSet.map((each) =>
             {
                 return(
-                    <ListContent key={index} title={each} id={index}/>
+                    <ListContent type={props.type} key={each.id} title={each.name} id={each.id} selectedTeam={props.selectedTeam}/>
                 )
             })}
         </div>

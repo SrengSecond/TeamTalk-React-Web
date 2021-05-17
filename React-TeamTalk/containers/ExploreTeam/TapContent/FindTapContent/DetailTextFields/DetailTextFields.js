@@ -22,15 +22,18 @@ function DetailTextFields(props)
     const classes = useStyles();
     const [value, setValue] = React.useState('Controlled');
 
-    const handleChange = (event) => {
+    const handleChange = (event) =>
+    {
         setValue(event.target.value);
+        console.log(value);
     };
 
     return (
         <form className={classes.root} noValidate autoComplete="off">
             <div>
                 <TextField
-
+                    disabled={true}
+                    value={props.value}
                     placeholder={props.placeholderTxt}
                     id="outlined-multiline-static"
                     label={props.title}

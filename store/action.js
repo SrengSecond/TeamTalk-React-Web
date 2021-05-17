@@ -1,3 +1,4 @@
 export const INCREMENT = 'INCREMENT'
 export const DECREMENT = 'DECREMENT'
-export const SELECTMENU = "SELECTMENU"
+export const SELECTMENU = 'SELECTMENU'
+export const SELECTTEAM = 'SELECTTEAM'

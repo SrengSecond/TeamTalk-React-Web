@@ -4,7 +4,9 @@ import SearchDiv from "./SearchDiv/SearchDiv";
 import CreateButton from "./CreateButton/CreateButton";
 import FindTapContent from "../TapContent/FindTapContent/FindTapContent";
 import DetailTapContent from "../TapContent/FindTapContent/DetailTapContent";
+import {connect} from "react-redux"
 import './TeamDetail.css'
+
 
 
 function PostTeamDetail(props)
@@ -29,13 +31,19 @@ function PostTeamDetail(props)
 
             <div className={"mainContent"}>
                 <div className="list">
-                    <FindTapContent dataSet={list}/>
-                    <DetailTapContent/>
+                    <FindTapContent type={"post"} dataSet={props.postData} selectedTeam={props.selectedTeam}/>
+                    {(props.DetailTeam != null) && <DetailTapContent dataSet={props.DetailTeam[0]}/>}
                 </div>
             </div>
-
         </div>
     );
 }
-
-export default PostTeamDetail;
+const mapStateToProps = (state) =>
+{
+    return{
+        postData: state.AllPostTeam,
+        selectedTeam:state.SelectPostTeam,
+        DetailTeam:state.DetailPostTeam,
+    }
+}
+export default  connect(mapStateToProps) (PostTeamDetail);

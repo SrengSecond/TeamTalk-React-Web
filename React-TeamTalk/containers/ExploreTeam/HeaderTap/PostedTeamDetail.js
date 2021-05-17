@@ -7,12 +7,11 @@ import SearchDiv from "./SearchDiv/SearchDiv";
 import CreateButton from "./CreateButton/CreateButton";
 import FindTapContent from "../TapContent/FindTapContent/FindTapContent";
 import DetailTapContent from "../TapContent/FindTapContent/DetailTapContent";
+import {connect} from "react-redux"
 import './TeamDetail.css'
 
 function PostedTeamDetail(props)
 {
-    const list = ["OpenGL-Vertex Shader","Research Physic","Unity Project","Research Physic"]
-
 
     return (
         <div className="headerTap_Find">
@@ -32,16 +31,25 @@ function PostedTeamDetail(props)
 
             <div className={"mainContent"}>
                 <div className="list">
-                    <FindTapContent dataSet={list}/>
-                    <DetailTapContent/>
+                    <FindTapContent type={"posted"} dataSet={props.postedData} selectedTeam={props.selectedTeam}/>
+                    {(props.DetailTeam != null) && <DetailTapContent dataSet={props.DetailTeam[0]}/>}
+
                 </div>
             </div>
 
         </div>
     );
 }
+const mapStateToProps = (state) =>
+{
+    return{
+        postedData: state.AllPostedTeam,
+        selectedTeam:state.SelectPostedTeam,
+        DetailTeam: state.DetailPostedTeam
 
-export default PostedTeamDetail;
+    }
+}
+export default connect(mapStateToProps)(PostedTeamDetail);
 // <FormControl className={classes.formControl}>
 //     <InputLabel shrink htmlFor="age-native-label-placeholder">
 //         Department

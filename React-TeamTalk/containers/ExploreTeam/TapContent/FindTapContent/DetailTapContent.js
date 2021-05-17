@@ -33,7 +33,7 @@ function DetailTapContent(props)
                 <div className="top-detail">
                     <div className="left-detail">
                         <div className="top-left-detail">
-                            <h2>Tower of Hanoi Simulation</h2>
+                            <h2>{props.dataSet.name}</h2>
                         </div>
 
                         <div className="middle-left-detail">
@@ -43,12 +43,12 @@ function DetailTapContent(props)
                                 <div className="big-text-div">
                                     <div className={"text-div"}>
                                         <p className="label">Activity:</p>
-                                        <p className={"value-holder"}>Project Research</p>
+                                        <p className={"value-holder"}>{props.activity}</p>
                                     </div>
 
                                     <div className={"text-div"}>
                                         <p className="label">Department:</p>
-                                        <p className={"value-holder"}>ITE</p>
+                                        <p className={"value-holder"}>{props.department}</p>
                                     </div>
                                 </div>
 
@@ -57,12 +57,12 @@ function DetailTapContent(props)
 
                                     <div className={"text-div"}>
                                         <p className="label">Target Member:</p>
-                                        <p className={"value-holder"}>5</p>
+                                        <p className={"value-holder"}>{props.memberSize}</p>
                                     </div>
 
                                     <div className={"text-div"}>
                                         <p className="label">Published:</p>
-                                        <p className={"value-holder"}>3 day ago</p>
+                                        <p className={"value-holder"}>{props.postDate}</p>
                                     </div>
                                 </div>
                             </div>
@@ -70,10 +70,10 @@ function DetailTapContent(props)
 
                         <div className="bottom-left-detail">
 
-                            <p className={"value-holder"} >Contact: ZombieSlayer@gmail.com</p>
+                            <p className={"value-holder"} >Contact: {props.dataSet.email} </p>
                             <div className={"text-div"}>
                                 <p className="label">Tag:</p>
-                                <p className={"value-holder"}> C++, MatLab, Qt</p>
+                                <p className={"value-holder"}> {props.tag}</p>
                             </div>
 
                         </div>
@@ -84,18 +84,18 @@ function DetailTapContent(props)
                             <div className="double-div">
                                 <div className="first-text-div">
                                     <p className={"label"}>TeamOwn:</p>
-                                    <p className={"value-holder"}>Benz</p>
+                                    <p className={"value-holder"}>{props.teamOwner}</p>
                                 </div>
 
                                 <div className="second-text-div">
                                     <p className={"label"}>Permission:</p>
-                                    <p className={"value-holder"}>Open</p>
+                                    <p className={"value-holder"}>{props.permission}</p>
                                 </div>
                             </div>
 
                             <div className="text-div">
                                 <p className={"label"}>Location:</p>
-                                <p className={"value-holder"}>Phnom Penh, RUPP University</p>
+                                <p className={"value-holder"}>{props.location}</p>
                             </div>
                         </div>
 
@@ -113,8 +113,8 @@ function DetailTapContent(props)
                 </div>
 
                 <div className="middle-detail">
-                    <MultilineTextFields title={"Description"} marginLeftIn={2} width={"49.7ch"}  placeholderTxt={"Describe something about this team..."}/>
-                    <MultilineTextFields title={"Required"} marginLeftIn={1}   width={"25ch"}  placeholderTxt={"what is the required for team"}/>
+                    <MultilineTextFields value={props.value} title={"Description"} marginLeftIn={2} width={"49.7ch"}  placeholderTxt={"Describe something about this team..."}/>
+                    <MultilineTextFields value={props.value}  title={"Required"} marginLeftIn={1}   width={"25ch"}  placeholderTxt={"what is the required for team"}/>
                 </div>
 
                 <div className="bottom-detail">
@@ -124,6 +124,7 @@ function DetailTapContent(props)
                     </div>
                     <Members/>
                 </div>
+
                 <FooterBar/>
             </div>
         </div>

@@ -23,7 +23,6 @@ function HeaderTap(props)
         )
     }
 
-
     return (
 
         <div className={"HeaderTap"}>

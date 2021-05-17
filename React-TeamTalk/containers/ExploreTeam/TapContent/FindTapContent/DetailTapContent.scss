@@ -111,10 +111,11 @@
   padding:15px 15px 5px 15px;
   .left-detail
   {
-
+    flex-grow: 2;
   }
   .right-detail
   {
-    margin-left: 105px;
+    //margin-left: 105px;
+    flex-grow: 1;
   }
 }

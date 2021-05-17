@@ -14,7 +14,8 @@ function DatePicker(props) {
     // The first commit of Material-UI
     const [selectedDate, setSelectedDate] = React.useState( /*new Date('2021-05-10T13:10:54')*/);
 
-    const handleDateChange = (date) => {
+    const handleDateChange = (date) =>
+    {
         setSelectedDate(date);
     };
 
