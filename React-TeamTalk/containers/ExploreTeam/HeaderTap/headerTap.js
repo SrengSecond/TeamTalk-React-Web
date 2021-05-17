@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
-import HeaderTapFind from "./headerTapFind";
-import HeaderTapMy from "./headerTapMy";
+import PostTeamDetail from "./PostTeamDetail";
+import PostedTeamDetail from "./PostedTeamDetail";
 import  "./headerTap.css"
 import * as MenuType from "../../../../store/actions/FindTeamMenu"
 import Menus from "./MenuTap/Menus";
@@ -13,13 +13,13 @@ function HeaderTap(props)
     if(menuContent === MenuType.FINDTEAM)
     {
         menuContent = (
-            <HeaderTapFind/>
+            <PostTeamDetail/>
         )
     }
     else if(menuContent === MenuType.MYTEAM)
     {
         menuContent = (
-            <HeaderTapMy/>
+            <PostedTeamDetail/>
         )
     }
 

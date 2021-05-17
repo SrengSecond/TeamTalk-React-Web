@@ -2,13 +2,15 @@ import React from 'react';
 import FilterBar from "./FilterBar/filterBar";
 import SearchDiv from "./SearchDiv/SearchDiv";
 import CreateButton from "./CreateButton/CreateButton";
-import './headerTapFind.css'
 import FindTapContent from "../TapContent/FindTapContent/FindTapContent";
 import DetailTapContent from "../TapContent/FindTapContent/DetailTapContent";
+import './TeamDetail.css'
 
 
-function HeaderTapFind(props)
+function PostTeamDetail(props)
 {
+    const list = ["OpenGL-Vertex Shader","Research Physic"]
+
     return (
         <div className="headerTap_Find">
 
@@ -27,7 +29,7 @@ function HeaderTapFind(props)
 
             <div className={"mainContent"}>
                 <div className="list">
-                    <FindTapContent/>
+                    <FindTapContent dataSet={list}/>
                     <DetailTapContent/>
                 </div>
             </div>
@@ -36,4 +38,4 @@ function HeaderTapFind(props)
     );
 }
 
-export default HeaderTapFind;
+export default PostTeamDetail;

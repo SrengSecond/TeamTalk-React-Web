@@ -26,10 +26,6 @@ function DetailTapContent(props)
         console.log("asd")
     }
 
-    const handleDeleteChip = (chips,index) =>
-    {
-
-    }
 
     return (
         <div className="DetailTap-Content-div">

@@ -2,16 +2,15 @@ import React from 'react';
 import TagCollection from "../TagCollection/TagCollection";
 import icon from "../icon/research.png";
 import './ListContent.css'
-import MemberIcon from "../MemberIcon/MemberIcon";
 import MemberIcons from "../MemberIcon/MemberIcons";
 
 function ListContent(props)
 {
     const exmapleMember = ["Sreng","Sal","Sal",null,null,null,null]
     return (
-        <div className={"list_content"}>
+        <div  className={"list_content"} onClick={()=>{console.log("Click " + props.id)}}>
             <div className={"Left-content"}>
-                    <h2 className={"main_title"}>Tower of Hanoi Simulation</h2>
+                    <h2 className={"main_title"}>{props.title}</h2>
                     <p className={"description_location"}>ITE - Project Research</p>
                     <TagCollection/>
                     <MemberIcons fontSize={"fa-sm"} member={exmapleMember}/>
