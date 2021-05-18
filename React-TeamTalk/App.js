@@ -21,16 +21,15 @@ const App = (props) =>
             <Router>
                 <Layout>
                     <ScrollToTop/>
-                    <Route path={'/'}>
-                        <Redirect to={'/home'}>
-                        </Redirect>
-                    </Route>
 
                     {/*<h1>{props.count}</h1>*/}
                     {/*<button onClick={props.onIncrement}>increment</button>*/}
                     {/*<button onClick={props.onDecrement}>decrement</button>*/}
 
                     <Switch>
+                        <Route exact path={"/"}>
+                            <Redirect to={"/home"}/>
+                        </Route>
                         <Route path={'/home'} component={WelcomePage}/>
                         <Route path={'/find_team'} exact component={ExploreTeamDashBoard}/>
                         {/*<Route path={'/find_team/find'}  component={ExploreTeamDashBoard}/>*/}

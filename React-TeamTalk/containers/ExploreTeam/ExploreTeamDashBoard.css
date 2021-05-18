@@ -66,6 +66,16 @@
   margin-top: 16px;
   margin-left: 16px;
 }
+.creatTeam-PopUp-open .main .left_input .left_input-div .textareaInput {
+  margin: 5px 0;
+  padding: 10px;
+  resize: none;
+  border: 1px solid #B3B3B3;
+}
+.creatTeam-PopUp-open .main .left_input .left_input-div .textareaInput:focus {
+  border: 1px solid transparent;
+  outline: 2px solid var(--primary);
+}
 .creatTeam-PopUp-open .main .left_input .left_input-div p {
   font-family: Inter, sans-serif;
   font-size: 10px;
@@ -75,8 +85,8 @@
 .creatTeam-PopUp-open .main .left_input .left_input-div .button-div button {
   background-color: var(--primary);
   text-align: center;
-  margin-bottom: 10px;
-  width: 275px;
+  margin-top: 11px;
+  width: 295px;
   outline: none;
   color: #fff;
   font-size: 16px;
@@ -110,10 +120,6 @@
 .creatTeam-PopUp-open .main .right_input .right_input-div .selector {
   margin-top: 5px;
 }
-.creatTeam-PopUp-open .main .right_input .right_input-div input[type=range] {
-  padding: 0;
-  margin: 0;
-}
 .creatTeam-PopUp-open .main .right_input .right_input-div input {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -125,7 +131,13 @@
   width: 250px;
 }
 .creatTeam-PopUp-open .main .right_input .right_input-div input:focus {
-  border: 1px solid var(--primary);
+  outline: 2px solid var(--primary);
+  border: 1px solid transparent;
+}
+.creatTeam-PopUp-open .main .right_input .right_input-div input[type=range] {
+  padding: 0;
+  margin: 0;
+  outline: none;
 }
 
 .creatTeam-PopUp-close {
