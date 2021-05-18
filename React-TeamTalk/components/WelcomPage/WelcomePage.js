@@ -2,17 +2,20 @@ import React from 'react';
 import Home from "../../containers/Home/Home";
 import ExploreCompoment from "../../containers/Explore/ExploreCompoment";
 import LogInOut from "../../containers/LogInOut/LogInOut";
+import './WelcomePage.css'
+
 import axios from "axios";
+import Selector from "../../containers/Selector/Selector";
 
 // axios.defaults.headers = {
 //     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
 // },
 
-
 class WelcomePage extends React.Component
 {
-
-
+    state = {
+        click:false
+    }
     componentDidMount() {
             // // api.get('/team')
             // //     .then(res => console.log(res.data))
@@ -70,11 +73,20 @@ class WelcomePage extends React.Component
     //     axios.get('team')
     //         .then(res =>console.log(res.data))
     // }
-
+    handleClick = () =>
+    {
+        this.setState((prevState)=>
+        {
+            return {
+                click:!prevState.click
+            }
+        })
+        console.log(this.state.click)
+    }
     render()
     {
         return (
-            <div>
+            <div className={"welcomePages"}>
                 <Home/>
                 <ExploreCompoment/>
                 <LogInOut/>

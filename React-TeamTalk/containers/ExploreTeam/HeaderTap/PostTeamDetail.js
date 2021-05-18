@@ -6,6 +6,7 @@ import FindTapContent from "../TapContent/FindTapContent/FindTapContent";
 import DetailTapContent from "../TapContent/FindTapContent/DetailTapContent";
 import {connect} from "react-redux"
 import './TeamDetail.css'
+import Popup from "reactjs-popup";
 
 
 
@@ -35,6 +36,7 @@ function PostTeamDetail(props)
                     {(props.DetailTeam != null) && <DetailTapContent dataSet={props.DetailTeam[0]}/>}
                 </div>
             </div>
+
         </div>
     );
 }

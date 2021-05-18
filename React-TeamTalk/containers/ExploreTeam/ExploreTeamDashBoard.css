@@ -10,4 +10,126 @@
   background-repeat: no-repeat;
 }
 
+.layout-overlay-open {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.layout-overlay-close {
+  display: none;
+}
+
+.creatTeam-PopUp-open {
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  background-color: #fff;
+  transform: translate(-50%, -50%) scale(1.2);
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+}
+.creatTeam-PopUp-open .header {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--primary);
+}
+.creatTeam-PopUp-open .header h3 {
+  font-family: Inter, sans-serif;
+  flex-grow: 1;
+  margin: 15px;
+}
+.creatTeam-PopUp-open .header i {
+  padding: 10px 15px;
+}
+.creatTeam-PopUp-open .header i .i-div {
+  width: 46px;
+  height: 46px;
+  text-align: center;
+}
+.creatTeam-PopUp-open .header i:hover {
+  background-color: #E74895;
+  cursor: pointer;
+}
+.creatTeam-PopUp-open .main {
+  text-align: center;
+  display: flex;
+}
+.creatTeam-PopUp-open .main .left_input {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+.creatTeam-PopUp-open .main .left_input .left_input-div p {
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  text-align: start;
+  margin-left: 10px;
+}
+.creatTeam-PopUp-open .main .left_input .left_input-div .button-div button {
+  background-color: var(--primary);
+  text-align: center;
+  margin-bottom: 10px;
+  width: 275px;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  border: 2px solid transparent;
+  padding: 12px;
+  border-radius: 2px;
+}
+.creatTeam-PopUp-open .main .left_input .left_input-div .button-div button:hover {
+  background-color: var(--primary_gray_background);
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  cursor: pointer;
+}
+.creatTeam-PopUp-open .main .right_input {
+  text-align: center;
+  margin: 10px 20px;
+}
+.creatTeam-PopUp-open .main .right_input .right_input-div {
+  width: 250px;
+}
+.creatTeam-PopUp-open .main .right_input .right_input-div p {
+  text-align: start;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.creatTeam-PopUp-open .main .right_input .right_input-div .memberSize {
+  margin: 0;
+  font-size: 13px;
+}
+.creatTeam-PopUp-open .main .right_input .right_input-div .selector {
+  margin-top: 5px;
+}
+.creatTeam-PopUp-open .main .right_input .right_input-div input[type=range] {
+  padding: 0;
+  margin: 0;
+}
+.creatTeam-PopUp-open .main .right_input .right_input-div input {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  margin: 5px 0;
+  outline: none;
+  border: 1px solid #B3B3B3;
+  padding: 13px 10px;
+  color: black;
+  width: 250px;
+}
+.creatTeam-PopUp-open .main .right_input .right_input-div input:focus {
+  border: 1px solid var(--primary);
+}
+
+.creatTeam-PopUp-close {
+  display: none;
+}
+
 /*# sourceMappingURL=ExploreTeamDashBoard.css.map */

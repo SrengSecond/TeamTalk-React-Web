@@ -12,9 +12,12 @@ function DetailTextFields(props)
                 margin: theme.spacing(1),
                 marginLeft: theme.spacing(props.marginLeftIn),
                 width: /*'30ch'*/`${props.width}`,
-
-                // height:`${props.height}`
+                '& .MuiOutlinedInput-inputMultiline':
+                    {
+                        height:`${props.height}`
+                    }
             },
+
         },
     }));
 
@@ -32,15 +35,14 @@ function DetailTextFields(props)
         <form className={classes.root} noValidate autoComplete="off">
             <div>
                 <TextField
-                    disabled={true}
+                    // disabled={true}
                     value={props.value}
                     placeholder={props.placeholderTxt}
                     id="outlined-multiline-static"
                     label={props.title}
                     multiline
                     rows={4}
-                    variant="outlined"
-                />
+                    variant="outlined"/>
             </div>
         </form>
     );

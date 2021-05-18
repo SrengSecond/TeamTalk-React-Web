@@ -10,7 +10,6 @@ function Menus(props)
         <div className="Menus">
             <Menu title={"FindTeam"}/>
             <Menu title={"MyTeam"}/>
-
         </div>
     );
 }

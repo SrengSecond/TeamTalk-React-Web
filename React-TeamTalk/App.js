@@ -35,6 +35,7 @@ const App = (props) =>
                         <Route path={'/find_team'} exact component={ExploreTeamDashBoard}/>
                         {/*<Route path={'/find_team/find'}  component={ExploreTeamDashBoard}/>*/}
                     </Switch>
+
                 </Layout>
             </Router>
         </div>

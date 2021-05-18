@@ -112,7 +112,7 @@ export default function NativeSelects() {
                 >
 
                     <option value={""}>All Activity</option>
-                    <option value={"assigment"}>Assigment</option>
+                    <option value={"assignment"}>Assigment</option>
                     <option value={"lab"}>Lab</option>
                     <option value={"school project"}>School project</option>
                     <option value={"project practicum"}>Project practicum</option>

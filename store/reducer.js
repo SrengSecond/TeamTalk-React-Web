@@ -5,7 +5,7 @@ const initialState =
         count:5,
         FindMenu:FindTeamMenu.FINDTEAM,
 
-        AllPostTeam:[{name:"C++",id:1,email:"ZombieStudio@gmail.com"},{name:"java",id:2},{name:"android",id:5}],
+        AllPostTeam:[{name:"C++",id:1,email:"ZombieStudio@gmail.com"},{name:"java",id:2},{name:"android",id:3},{name:"C++",id:4,email:"ZombieStudio@gmail.com"},{name:"java",id:5},{name:"android",id:6}],
         AllPostedTeam:[{name:"C#",id:3},{name:"java",id:2},{name:"android",id:4}],
 
         SelectPostTeam: null,
@@ -13,6 +13,8 @@ const initialState =
 
         SelectPostedTeam:null,
         DetailPostedTeam:null,
+
+        CreateTeamPopUp:false
     }
 
 const reducer = (state = initialState,action) =>
@@ -34,6 +36,15 @@ const reducer = (state = initialState,action) =>
             return {
                 ...state,
                 FindMenu:action.menu
+            }
+        }
+        case (ActionType.CREATETEAM):
+        {
+            console.log(!state.CreateTeamPopUp);
+
+            return {
+                ...state,
+                CreateTeamPopUp: !state.CreateTeamPopUp
             }
         }
         case (ActionType.SELECTTEAM):
@@ -65,7 +76,9 @@ const reducer = (state = initialState,action) =>
 
                         }
                     }
-        }
+
+            }
+
 
         default:
             return state
