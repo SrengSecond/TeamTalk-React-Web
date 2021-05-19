@@ -128,7 +128,7 @@ function CreatTeamFrom(props)
 
                                 <p>How many member you want in your team ?</p>
                                 {/*<input type="range" min="1" max="15" placeholder={"Member"} onChange={handleMemberSize} value={member} required/>*/}
-                                <input type="number" placeholder={"MemberSize"} min="1" max="15" {...register("memberSize",{required:true,maxLength:16, min:1, max:15})}/>
+                                <input type="number" placeholder={"Member Size"} min="1" max="15" {...register("memberSize",{required:true,maxLength:16, min:1, max:15})}/>
                                 <p className={"memberSize"}>Maximum number:15 </p>
 
                                 <p>Does anyone can join ?</p>

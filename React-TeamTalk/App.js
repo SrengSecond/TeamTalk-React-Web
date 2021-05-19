@@ -13,7 +13,9 @@ import WelcomePage from "./components/WelcomPage/WelcomePage";
 import ScrollToTop from "./containers/ScrollToUp/ScrollToTop";
 import {connect} from 'react-redux'
 import * as ActionTypes from '../store/action'
-import ExploreTalkDashBoard from "./containers/ExploreTalk/ExploreTalkDashBoard";
+import ExploreTalkDashBoard from "./containers/ExploreTalk/ExploreTalkDashBoard/ExploreTalkDashBoard";
+
+
 
 const App = (props) =>
 {
@@ -28,9 +30,8 @@ const App = (props) =>
                     {/*<button onClick={props.onDecrement}>decrement</button>*/}
 
                     <Switch>
-                        <Route exact path={"/"}>
-                            <Redirect to={"/home"}/>
-                        </Route>
+
+                        <Redirect exact from={"/"} to={"/home"}/>
                         <Route path={'/home'} component={WelcomePage}/>
                         <Route path={'/find_team'} component={ExploreTeamDashBoard}/>
                         <Route path={'/talk_more'} component={ExploreTalkDashBoard}/>

@@ -8,8 +8,8 @@ function Menus(props)
 {
     return (
         <div className="Menus">
-            <Menu title={"FindTeam"}/>
-            <Menu title={"MyTeam"}/>
+            <Menu title={"FindTeam"} link={"/find_team/findteam"}/>
+            <Menu title={"MyTeam"} link={"/find_team/myteam"}/>
         </div>
     );
 }

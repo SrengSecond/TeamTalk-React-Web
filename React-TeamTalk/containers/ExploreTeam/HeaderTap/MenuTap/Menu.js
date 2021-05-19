@@ -11,7 +11,7 @@ function Menu(props)
         <div className={props.SelectMenu === props.title? "Menu_selected": "Menu"}>
             <Link className={"Menu-item"}
                   onClick={() => props.handleClickMenu(props.title)}
-                  to={'/find_team'}>{props.title}
+                  to={props.Link}>{props.title}
             </Link>
         </div>
     );
