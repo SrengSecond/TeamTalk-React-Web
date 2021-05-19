@@ -21,38 +21,12 @@ class ExploreTeamDashBoard extends Component
         }
 
 
-     handleSubmit = (e) =>
-    {
-        console.log(e)
-
-        // e.preventDefault();
-
-        this.setState(
-            {
-                isLoading: true
-            })
-
-        const timer = setTimeout(() =>
-        {
-            this.setState(
-                {
-                    isLoading: false
-                });
-            {
-                this.props.handleCloseCreate();
-            }
-        }, 2000);
-        return () => clearTimeout(timer);
-
-    }
-
-
     render() {
         return(
             <div className="ExploreTeamDashBoard">
                 <div className={this.props.isCreateTeam ? "layout-overlay-open":"layout-overlay-close"}/>
                 <HeaderTap/>
-                <CreatTeamFrom isCreateTeam={this.props.isCreateTeam}  handleCloseCreate={this.props.handleCloseCreate} isLoading={this.state.isLoading} handleSubmit={this.handleSubmit}/>
+                <CreatTeamFrom isCreateTeam={this.props.isCreateTeam}  handleCloseCreate={this.props.handleCloseCreate}  handleSubmit={this.handleSubmit}/>
             </div>
 
         );

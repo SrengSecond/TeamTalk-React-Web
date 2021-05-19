@@ -1,3 +1,7 @@
+:root {
+  --primary_gray_boder_input: #B3B3B3;
+}
+
 .ExploreTeamDashBoard {
   min-height: 100vh;
   display: flex;
@@ -63,14 +67,13 @@
   display: flex;
 }
 .creatTeam-PopUp-open .main .left_input {
-  margin-top: 16px;
-  margin-left: 16px;
+  margin: 10px 20px;
 }
 .creatTeam-PopUp-open .main .left_input .left_input-div .textareaInput {
   margin: 5px 0;
   padding: 10px;
   resize: none;
-  border: 1px solid #B3B3B3;
+  border: 1px solid var(--primary_gray_boder_input);
 }
 .creatTeam-PopUp-open .main .left_input .left_input-div .textareaInput:focus {
   border: 1px solid transparent;
@@ -80,18 +83,18 @@
   font-family: Inter, sans-serif;
   font-size: 10px;
   text-align: start;
-  margin-left: 10px;
+  margin-top: 5px;
 }
 .creatTeam-PopUp-open .main .left_input .left_input-div .button-div button {
+  margin-top: 15px;
   background-color: var(--primary);
   text-align: center;
-  margin-top: 11px;
-  width: 295px;
+  width: 300px;
   outline: none;
   color: #fff;
   font-size: 16px;
   border: 2px solid transparent;
-  padding: 12px;
+  padding: 10px 12px;
   border-radius: 2px;
 }
 .creatTeam-PopUp-open .main .left_input .left_input-div .button-div button:hover {
@@ -112,10 +115,12 @@
   font-family: Inter, sans-serif;
   font-size: 10px;
   margin-top: 10px;
+  margin-bottom: 5px;
 }
 .creatTeam-PopUp-open .main .right_input .right_input-div .memberSize {
-  margin: 0;
-  font-size: 13px;
+  font-size: 8px;
+  color: var(--primary);
+  margin-top: 5px;
 }
 .creatTeam-PopUp-open .main .right_input .right_input-div .selector {
   margin-top: 5px;
@@ -123,10 +128,9 @@
 .creatTeam-PopUp-open .main .right_input .right_input-div input {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
-  margin: 5px 0;
   outline: none;
-  border: 1px solid #B3B3B3;
-  padding: 13px 10px;
+  border: 1px solid var(--primary_gray_boder_input);
+  padding: 8px 10px;
   color: black;
   width: 250px;
 }
@@ -134,14 +138,36 @@
   outline: 2px solid var(--primary);
   border: 1px solid transparent;
 }
-.creatTeam-PopUp-open .main .right_input .right_input-div input[type=range] {
-  padding: 0;
-  margin: 0;
-  outline: none;
+.creatTeam-PopUp-open .main .right_input .right_input-div input[type=number] {
+  -moz-appearance: textfield;
+}
+.creatTeam-PopUp-open .main .right_input .right_input-div .optional_input {
+  margin-bottom: 15px;
+}
+
+option:hover {
+  background-color: #488f8f;
 }
 
 .creatTeam-PopUp-close {
   display: none;
+}
+
+.select-Department, .select-Activity, .select-Permission {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  outline: none;
+  padding: 8px 10px;
+  color: black;
+  width: 250px;
+  border: 1px solid var(--primary_gray_boder_input);
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+  -webkit-appearance: none;
+  background-position-x: 220px;
+}
+.select-Department:focus, .select-Activity:focus, .select-Permission:focus {
+  outline: 2px solid var(--primary);
+  border: 1px solid transparent;
 }
 
 /*# sourceMappingURL=ExploreTeamDashBoard.css.map */

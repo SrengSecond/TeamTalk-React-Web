@@ -13,6 +13,7 @@ import WelcomePage from "./components/WelcomPage/WelcomePage";
 import ScrollToTop from "./containers/ScrollToUp/ScrollToTop";
 import {connect} from 'react-redux'
 import * as ActionTypes from '../store/action'
+import ExploreTalkDashBoard from "./containers/ExploreTalk/ExploreTalkDashBoard";
 
 const App = (props) =>
 {
@@ -31,7 +32,8 @@ const App = (props) =>
                             <Redirect to={"/home"}/>
                         </Route>
                         <Route path={'/home'} component={WelcomePage}/>
-                        <Route path={'/find_team'} exact component={ExploreTeamDashBoard}/>
+                        <Route path={'/find_team'} component={ExploreTeamDashBoard}/>
+                        <Route path={'/talk_more'} component={ExploreTalkDashBoard}/>
                         {/*<Route path={'/find_team/find'}  component={ExploreTeamDashBoard}/>*/}
                     </Switch>
 
