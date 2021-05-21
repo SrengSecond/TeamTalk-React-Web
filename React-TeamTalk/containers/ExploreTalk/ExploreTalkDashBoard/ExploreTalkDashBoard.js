@@ -23,8 +23,8 @@ function ExploreTalkDashBoard(props)
     return (
         <div className="ExploreTalkDashBoard">
             <div className="Page_Layout">
-                {/*{explorePage}*/}
-                <QuestionDashBoard/>
+                {explorePage}
+                {/*<QuestionDashBoard/>*/}
             </div>
         </div>
     );
