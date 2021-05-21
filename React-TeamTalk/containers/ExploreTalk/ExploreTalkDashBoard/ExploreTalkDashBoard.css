@@ -1,13 +1,27 @@
 .ExploreTalkDashBoard {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: start;
-  background-image: url(./../../../assets/image/pyramids-starry-green.jpg);
+  min-Height: 100vh;
+  background: url(./../../../assets/image/pyramids-starry-green.jpg) no-repeat center center fixed;
   background-blend-mode: multiply;
-  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
+}
+.ExploreTalkDashBoard .Page_Layout {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.ExploreTalkDashBoard .Page_Layout .headerDashBoard {
+  z-index: 2;
+}
+.ExploreTalkDashBoard .Page_Layout .mainDashBoard {
+  z-index: 1;
 }
 
 /*# sourceMappingURL=ExploreTalkDashBoard.css.map */

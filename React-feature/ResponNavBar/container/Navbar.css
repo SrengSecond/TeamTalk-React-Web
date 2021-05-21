@@ -5,6 +5,7 @@
 }
 
 .navbar {
+
     /*background: linear-gradient(90deg, rgb(28, 27, 27) 20%, rgb(26, 23, 23) 100%);*/
     background-color: rgba(0,0,0,0.6);
     height: 80px;
@@ -19,6 +20,8 @@
     top: 0;
 
     left: 0;
+
+    z-index:3;
 }
 
 .navbar-logo {

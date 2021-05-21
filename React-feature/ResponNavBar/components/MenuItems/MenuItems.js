@@ -3,12 +3,12 @@ const MenuItems =
     [
         {
             title: 'FindTeam',
-            path: '/find_team',
+            path: '/exploreTeam',
             cName: 'dropdown-link'
         },
         {
             title: 'TalkMore',
-            path: '/talk_more',
+            path: '/exploreTalk',
             cName: 'dropdown-link'
         },
 

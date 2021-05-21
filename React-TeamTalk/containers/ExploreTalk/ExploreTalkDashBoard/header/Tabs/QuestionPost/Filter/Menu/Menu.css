@@ -1,40 +1,27 @@
-:root {
-  --primary_hover_P:#E74895;
-}
-
 .Menu {
   background-color: var(--primary);
-  padding: 10px;
   width: 100px;
   text-align: center;
-}
-.Menu .MenuFilter-item {
-  color: var(--primary_gray_background);
-  text-decoration: none;
-}
-.Menu .Menu-item {
   text-decoration: none;
   color: #fff;
 }
 .Menu:hover {
+  cursor: pointer;
   background-color: var(--primary_hover_P);
 }
 .Menu:hover .Menu-item {
   transition: all 0.5s ease-in-out;
-  font-size: 18px;
 }
 
-.Menu_selected {
+.Menu-select {
   padding: 10px;
   width: 100px;
   text-align: center;
-  background-color: var(--primary_gray_background);
-}
-.Menu_selected .MenuFilter-item {
   color: var(--primary);
   text-decoration: none;
+  background-color: #fff;
 }
-.Menu_selected .Menu-item {
+.Menu-select .Menu-item {
   text-decoration: none;
   color: var(--primary);
 }

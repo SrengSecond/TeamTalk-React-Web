@@ -1,0 +1,48 @@
+//.Filter-div
+//{
+//  display:flex;
+//  align-items: center;
+//}
+//.Filter-MultiMenu
+//{
+//  margin-left: 300px;
+//
+//}
+.Filter
+{
+  .Filter-clickable
+  {
+    display: flex;
+    outline:2px solid var(--primary);
+    outline-offset: 0;
+
+    &:hover
+    {
+      outline-offset: 2px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .Filter-hover
+  {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-top: 6px;
+    outline:2px solid var(--primary);
+    .MenuFilter
+    {
+      z-index: 1;
+    }
+    &:hover
+    {
+
+    }
+  }
+  .Filter-hover-left
+  {
+    display: none;
+
+
+  }
+}
+

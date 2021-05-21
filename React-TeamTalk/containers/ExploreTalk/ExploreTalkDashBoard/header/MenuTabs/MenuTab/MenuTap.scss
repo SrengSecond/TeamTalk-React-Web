@@ -1,0 +1,41 @@
+:root
+{
+  --interfont: Inter, sans-serif;
+  --psfont: "PT Sans", sans-serif;
+}
+
+.MenuTap //Root
+{
+    background-color: var(--primary);
+    padding:10px;
+    width:100px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+
+  &:hover
+  {
+    background-color: var(--primary_hover_P);
+    .Menu-item
+    {
+      transition: all 0.3s ease-in-out;
+      //text-decoration: underline;;
+      //font-size: 18px;
+    }
+  }
+}
+.MenuTap-select
+{
+  padding:10px;
+  width:100px;
+  text-align: center;
+  color: var(--primary);
+  text-decoration: none;
+  //background-color: var(--primary_gray_background);
+  background-color: #fff;
+  .Menu-item
+  {
+    text-decoration: none;
+    color:var(--primary);
+  }
+}

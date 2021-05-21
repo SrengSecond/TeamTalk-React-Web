@@ -33,8 +33,8 @@ const App = (props) =>
 
                         <Redirect exact from={"/"} to={"/home"}/>
                         <Route path={'/home'} component={WelcomePage}/>
-                        <Route path={'/find_team'} component={ExploreTeamDashBoard}/>
-                        <Route path={'/talk_more'} component={ExploreTalkDashBoard}/>
+                        <Route path={'/exploreTeam'} component={ExploreTeamDashBoard}/>
+                        <Route path={'/exploreTalk'} component={ExploreTalkDashBoard}/>
                         {/*<Route path={'/find_team/find'}  component={ExploreTeamDashBoard}/>*/}
                     </Switch>
 

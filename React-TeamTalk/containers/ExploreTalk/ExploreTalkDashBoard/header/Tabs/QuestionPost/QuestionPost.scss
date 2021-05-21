@@ -1,0 +1,23 @@
+.QuestionPost
+{
+  padding: 25px 20px 25px 20px;
+  display:flex;
+  .left
+  {
+    flex-grow: 1;
+    .QuestionTitle
+    {
+      font-family: var(--interfont);
+    }
+    .QuestionCount
+    {
+      font-family: var(--interfont);
+      margin-top: 20px;
+    }
+  }
+  .right
+  {
+    margin-top:20px;
+    flex-grow:0;
+  }
+}

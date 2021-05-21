@@ -1,0 +1,28 @@
+:root
+{
+  --primary_width:1020px;
+}
+.Tabs
+{
+
+  .QuestionPostTap
+  {
+    height:150px;
+    width:var(--primary_width);
+    border-bottom: 2px solid var(--primary_gray_border);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .CreatePostTap
+  {
+    height:240px;
+    width:var(--primary_width);
+    border-bottom: 2px solid var(--primary_gray_border);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  }
+
+
+  //background-color: var(--primary_gray_background);
+  background-color: #fff;
+
+}

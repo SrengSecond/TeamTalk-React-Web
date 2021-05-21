@@ -1,0 +1,145 @@
+.PostForm
+{
+  padding:15px;
+  .top
+  {
+
+    display: flex;
+    .questionTitle, .tag-div
+    {
+
+      font-family: var(--interfont);
+      font-size: 16px;
+      outline: none;
+      border: 1px solid var(--primary_gray_boder_input);
+      padding: 8px 10px;
+      color: black;
+      //width: 250px;
+
+      &:focus
+      {
+        outline: 2px solid var(--primary);
+        border: 1px solid transparent;
+      }
+    }
+    .questionTitle
+    {
+      margin-right: 6px;
+      flex-grow: 2;
+    }
+    .tag-div
+    {
+      flex-grow:0;
+      width:160px;
+    }
+
+    .department
+    {
+      margin-right: 6px;
+
+      flex-grow:0;
+      font-family: var(--interfont);
+      font-size: 16px;
+      outline:none;
+      padding:8px 10px;
+      color: black;
+      width:100px;
+      border:1px solid var(--primary_gray_boder_input);
+      background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) #fff no-repeat right ;
+      -webkit-appearance: none;
+      background-position-x: 70px;
+      &:focus
+      {
+        outline: 2px solid var(--primary);
+        border: 1px solid transparent;
+      }
+    }
+
+  }
+  .middle
+  {
+    margin: 8px 0;
+    display:flex;
+    height:120px;
+    .textareaInput
+    {
+      font-family: var(--interfont);
+
+      flex-grow: 1;
+      padding: 10px;
+      resize: none;
+      border: 1px solid var(--primary_gray_boder_input);
+      &:focus
+      {
+        border: 1px solid transparent;
+        outline: 2px solid var(--primary);
+
+      }
+    }
+  }
+  .bottom
+  {
+    display:flex;
+    justify-content: space-between;
+    .iconButtons
+    {
+      display: flex;
+      align-items: center;
+      .iconButton
+      {
+        margin-right:15px;
+        margin-left:5px;
+        color: var(--primary_gray_boder_input);
+        &:hover
+        {
+          cursor: pointer;
+          color: var(--primary);
+
+        }
+      }
+    }
+
+    .submit-div
+    {
+
+      display: flex;
+      align-items: center;
+      .submit-cancel
+      {
+        font-family: var(--interfont);
+
+        &:hover
+        {
+          cursor: pointer;
+          text-decoration: underline;
+          color:var(--primary);
+        }
+      }
+      .space
+      {
+        font-family: var(--interfont);
+
+        margin: 0 12px;
+      }
+      .submit-Button
+      {
+        background-color: var(--primary);
+        text-align: center;
+        width: 150px;
+        outline: none;
+        color: #fff;
+        font-size: 16px;
+        border: 2px solid transparent;
+        padding: 8px 12px;
+        border-radius: 2px;
+        &:hover
+        {
+          background-color: var(--primary_gray_background);
+          border: 2px solid var(--primary);
+          color: var(--primary);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

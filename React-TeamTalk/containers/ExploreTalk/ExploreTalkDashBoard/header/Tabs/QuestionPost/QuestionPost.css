@@ -1,0 +1,20 @@
+.QuestionPost {
+  padding: 25px 20px 25px 20px;
+  display: flex;
+}
+.QuestionPost .left {
+  flex-grow: 1;
+}
+.QuestionPost .left .QuestionTitle {
+  font-family: var(--interfont);
+}
+.QuestionPost .left .QuestionCount {
+  font-family: var(--interfont);
+  margin-top: 20px;
+}
+.QuestionPost .right {
+  margin-top: 20px;
+  flex-grow: 0;
+}
+
+/*# sourceMappingURL=QuestionPost.css.map */

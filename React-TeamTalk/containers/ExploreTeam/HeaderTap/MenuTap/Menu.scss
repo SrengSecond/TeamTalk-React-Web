@@ -8,6 +8,11 @@
   padding:10px;
   width:100px;
   text-align: center;
+  .MenuFilter-item
+  {
+    color:var(--primary_gray_background);
+    text-decoration:none;
+  }
   .Menu-item
   {
     text-decoration: none;
@@ -25,6 +30,11 @@
 }
 .Menu_selected
 {
+  .MenuFilter-item
+  {
+    color:var(--primary);
+    text-decoration:none;
+  }
   padding:10px;
   width:100px;
   text-align: center;
