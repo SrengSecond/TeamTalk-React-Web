@@ -127,6 +127,9 @@
         .submit-cancel
         {
           font-family: var(--interfont);
+          outline:none;
+          background-color: transparent;
+          border: none;
 
           &:hover
           {

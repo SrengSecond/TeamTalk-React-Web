@@ -7,7 +7,10 @@
   display: flex;
   height:100vh;
   //background-image: url(../../../React-TeamTalk/assets/image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg);
-  background-image: url(../../../React-TeamTalk/assets/image/TwoMountain.png);
+  //background: rgba(11, 17, 29, 0.2) url(../../../React-TeamTalk/assets/image_2/pyramids-starry-Bright.jpg);
+  background: rgba(11, 17, 29, 0.25) url(../../assets/image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg) no-repeat center center fixed;
+
+  background-blend-mode: multiply;
   background-position:center;
   background-size: cover;
   background-repeat:no-repeat;
@@ -59,7 +62,7 @@
 
   footer
   {
-
+    z-index:3;
     display: flex;
     padding: 20px;
     color: #fff;

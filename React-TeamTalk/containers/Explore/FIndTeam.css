@@ -1,44 +1,72 @@
-.join-team {
+.features-card {
+  z-index: 1;
   margin: 10px;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 25px 15px;
-  background-color: #fff;
-  height: 350px;
+  height: 500px;
+  width: 360px;
+  display: flex;
+  background-size: cover;
+  background-position-x: 60%;
+  background-position-y: -1rem;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  transition-property: height, width;
+}
+.features-card:hover {
+  height: 520px;
+  width: 380px;
+  outline: 2px solid #fff;
+  --underline_width:100%;
+}
+.features-card .features-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.features-card .features-card-wrapper .cardTitle-Div {
   display: flex;
 }
-.join-team .join-team-wrapper {
-  text-align: center;
-}
-.join-team .join-team-wrapper h1 {
-  margin-bottom: 16px;
-}
-.join-team .join-team-wrapper .text-div {
-  margin: 25px 0 35px 0;
+.features-card .features-card-wrapper .cardTitle-Div .cardTitle {
+  color: #fff;
+  position: relative;
+  padding-bottom: 4px;
   display: flex;
-  align-items: center;
+}
+.features-card .features-card-wrapper .underlineCard {
+  --padding_underline:15px;
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: calc(100% + var(--padding_underline));
+  left: calc(var(--padding_underline) * -1);
+  bottom: 0;
+  background-color: var(--primary);
+}
+.features-card .features-card-wrapper .cardDetail {
+  color: #fff;
+  margin-top: 16px;
+  display: flex;
   width: 300px;
   height: 100px;
 }
-.join-team .join-team-wrapper .text-div p {
+.features-card .features-card-wrapper .cardDetail p {
   font-family: "Open Sans", sans-serif;
 }
-.join-team .join-team-wrapper .findTeam-button {
-  margin-top: 16px;
+.features-card .features-card-wrapper .findTeam-button {
   padding: 10px 30px;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: none;
-  border: 2px solid var(--home_primary);
-  font-size: 18px;
+  border: none;
+  font-size: 14px;
   color: #fff;
   cursor: pointer;
   background-color: var(--home_primary);
 }
-.join-team .join-team-wrapper .findTeam-button:hover {
+.features-card .features-card-wrapper .findTeam-button:hover {
   transition: all 0.3s ease-in-out;
   background-color: #fff;
   color: var(--home_primary);
-  border-radius: 10px;
-  border: 2px solid var(--home_primary);
 }
 
 /*# sourceMappingURL=FIndTeam.css.map */

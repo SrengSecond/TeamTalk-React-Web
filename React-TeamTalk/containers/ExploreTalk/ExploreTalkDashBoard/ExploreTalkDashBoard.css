@@ -20,8 +20,21 @@
 .ExploreTalkDashBoard .Page_Layout .headerDashBoard {
   z-index: 2;
 }
+.ExploreTalkDashBoard .Page_Layout .headerDashBoard .MenuTaps {
+  display: flex;
+}
 .ExploreTalkDashBoard .Page_Layout .mainDashBoard {
   z-index: 1;
 }
+
+/*._loading_overlay_content
+{
+  margin-top:100px;
+  color:var(--primary)
+}
+.spinnerIcon
+{
+  margin-bottom: 10px;
+}*/
 
 /*# sourceMappingURL=ExploreTalkDashBoard.css.map */

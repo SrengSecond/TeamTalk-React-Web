@@ -14,7 +14,10 @@ const initialState =
         SelectPostedTeam:null,
         DetailPostedTeam:null,
 
-        CreateTeamPopUp:false
+        CreateTeamPopUp:false,
+
+        ExploreTalkData:[],
+        SelectTalkDataDetail:{}
     }
 
 const reducer = (state = initialState,action) =>
@@ -38,6 +41,7 @@ const reducer = (state = initialState,action) =>
                 FindMenu:action.menu
             }
         }
+
         case (ActionType.CREATETEAM):
         {
             console.log(!state.CreateTeamPopUp);
@@ -47,6 +51,36 @@ const reducer = (state = initialState,action) =>
                 CreateTeamPopUp: !state.CreateTeamPopUp
             }
         }
+
+        case (ActionType.SETEXPLORETALKDATA):
+        {
+            console.log("[reducer.js] SetExploreData[]")
+            return {
+                ...state,
+                ExploreTalkData: action.fetchData}
+        }
+        case (ActionType.REMOVEEXPLORETALKDATA):
+        {
+            console.log("[reducer.js] RemoveExploreData[]")
+            return {
+                ...state,
+                ExploreTalkData: []}
+        }
+        case (ActionType.SELECTEXPLORETALKDATA):
+        {
+            console.log("[reducer.js] SelectExploreData[]")
+            return {
+                ...state,
+                SelectTalkDataDetail: action.selectQuestion}
+        }
+        case (ActionType.DESELECTEXPLORETALKDATA):
+        {
+            console.log("[reducer.js] DeSelectExploreData[]")
+            return {
+                ...state,
+                SelectTalkDataDetail: {}}
+        }
+
         case (ActionType.SELECTTEAM):
         {
 
@@ -73,13 +107,9 @@ const reducer = (state = initialState,action) =>
                             ...state,
                             SelectPostedTeam:action.id,
                             DetailPostedTeam:SelectDetailTeam
-
                         }
                     }
-
-            }
-
-
+        }
         default:
             return state
     }

@@ -12,8 +12,8 @@ function MenuTabs(props)
     return (
 
         <div className={"MenuTaps"}>
-            <MenuTab SelectMenuName={Menu} targetName={"TalkMore"} title={"TalkMore"} linkto={"/exploreTalk/allQuestion"} handleColorChange={handleColorChange}/>
-            <MenuTab SelectMenuName={Menu} targetName={"MyQuestion"} title={"MyQuestion"} linkto={"/exploreTalk/myQuestion"} handleColorChange={handleColorChange}/>
+            <MenuTab SelectMenuName={Menu} targetName={"TalkMore"} title={"TalkMore"} linkto={"/exploreTalk?TalkMore="} handleColorChange={handleColorChange}/>
+            <MenuTab SelectMenuName={Menu} targetName={"MyQuestion"} title={"MyQuestion"} linkto={"/exploreTalk?MyQuestion="} handleColorChange={handleColorChange}/>
         </div>
     );
 }

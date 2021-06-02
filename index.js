@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {createStore,combineReducers} from 'redux'
 import {Provider} from 'react-redux'
+import { composeWithDevTools } from 'redux-devtools-extension';
 /*import App from './Backup/Clone/App'*/ //Facebook =clone
 /*import App from './App'// Testing env*/
 /*import App from "./App";*/
@@ -11,8 +12,9 @@ import MyBasicApp from "./ReactBasic/MyBasicApp";*/
 import App from './React-TeamTalk/App' // Project env
 import './index.css'
 import reducer from "./store/reducer";
+import {BrowserRouter as Router} from "react-router-dom";
 
-const store = createStore(reducer);
+const store = createStore(reducer,  composeWithDevTools());
 
 //Store -> globalized state
 // let store = createStore
@@ -51,7 +53,11 @@ store.dispatch(incrementNumber)*/
 
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App/>
-    </Provider> ,document.getElementById("root"));
+    /*<React.StrictMode>*/
+    <Router>
+        <Provider store={store}>
+            <App/>
+        </Provider>
+    </Router>
+    /*</React.StrictMode>*/,document.getElementById("root"));
 

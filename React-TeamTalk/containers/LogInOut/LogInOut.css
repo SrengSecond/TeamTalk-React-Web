@@ -5,10 +5,9 @@
 .logInOut-background {
   display: flex;
   height: 100vh;
-  background-image: url(../../../React-TeamTalk/assets/image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg);
-  background-position: center;
+  background: rgba(11, 17, 29, 0.85) url(../../assets/image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg) no-repeat center center fixed;
+  background-blend-mode: multiply;
   background-size: cover;
-  background-repeat: no-repeat;
   justify-content: space-evenly;
   align-items: center;
 }

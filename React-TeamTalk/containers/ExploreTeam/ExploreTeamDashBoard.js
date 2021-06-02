@@ -13,24 +13,20 @@ import LoadingOverlay from 'react-loading-overlay';
 import axios from "axios";
 import CreatTeamFrom from "./TapContent/FindTapContent/CreateTeamForm/CreatTeamFrom";
 
-class ExploreTeamDashBoard extends Component
+function ExploreTeamDashBoard(props)
 {
-    state =
-        {
-            isLoading:false,
-        }
-
-
-    render() {
         return(
-            <div className="ExploreTeamDashBoard">
-                <div className={this.props.isCreateTeam ? "layout-overlay-open":"layout-overlay-close"}/>
-                <HeaderTap/>
-                <CreatTeamFrom isCreateTeam={this.props.isCreateTeam}  handleCloseCreate={this.props.handleCloseCreate}  handleSubmit={this.handleSubmit}/>
-            </div>
-
+            <LoadingOverlay
+                active={false}
+                spinner={<div><i className="fab fa-galactic-republic fa-spin fa-6x"/></div> }
+                text='Loading Team shortly...'>
+                <div className="ExploreTeamDashBoard">
+                        <div className={props.isCreateTeam ? "layout-overlay-open":"layout-overlay-close"}/>
+                        <HeaderTap/>
+                        <CreatTeamFrom isCreateTeam={props.isCreateTeam}  handleCloseCreate={props.handleCloseCreate}/>
+                </div>
+            </LoadingOverlay>
         );
-    }
 }
 ExploreTeamDashBoard.propTypes = {};
 const MapStateToProps = (state) =>

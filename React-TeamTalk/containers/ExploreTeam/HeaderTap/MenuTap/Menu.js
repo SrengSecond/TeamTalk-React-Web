@@ -11,7 +11,7 @@ function Menu(props)
         <div className={props.SelectMenu === props.title? "Menu_selected": "Menu"}>
             <Link className={"MenuFilter-item"}
                   onClick={() => props.handleClickMenu(props.title)}
-                  to={props.Link}>{props.title}
+                  to={props.link}>{props.title}
             </Link>
         </div>
     );

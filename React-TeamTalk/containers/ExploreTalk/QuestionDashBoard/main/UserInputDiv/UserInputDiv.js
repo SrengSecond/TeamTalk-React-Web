@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PostForm from "../../../ExploreTalkDashBoard/header/Tabs/CreatePost/PostForm/PostForm";
 import {useForm} from "react-hook-form";
 import ReactTooltip from "react-tooltip";
@@ -8,6 +8,28 @@ import AnswerFilter from "../AnswerDiv/AnswerFilter/AnswerFilter";
 function UserInputDiv(props)
 {
     const { register, handleSubmit,getValues,formState:{errors} } = useForm();
+
+    const [clearInput,SetClearInput] = useState(false)
+
+    const onSubmit = (data,event) =>
+    {
+        console.log("[PostForm.js] SubmitForm")
+        event.target.reset();
+        console.log(data)
+    };
+    const onCancel = (data,event) =>
+    {
+        console.log("[PostForm.js] ClearForm")
+        event.target.reset();
+        SetClearInput(pre => !pre)
+
+    }
+    const handleCancel = () =>
+    {
+        console.log("[PostForm.js] ClickCancel")
+        SetClearInput(pre => !pre)
+    }
+
     return(
         <div className={"UserInputDiv"}>
             <div className="UserInputDiv-header">
@@ -18,6 +40,8 @@ function UserInputDiv(props)
                 <div className={"input_label"}>
                     <h2>Write Your Answer here</h2>
                 </div>
+                <form onSubmit={handleSubmit(clearInput?onCancel:onSubmit)}>
+
                 <div className="top">
                     <input type="text"
                            className={"questionTitle"}
@@ -75,10 +99,11 @@ function UserInputDiv(props)
 
 
                     <div className="submit-div">
-                        <p
+                        <button
+                            onClick={handleCancel}
                             className="submit-cancel"
                             data-tip data-for={"cancel"}
-                        >Cancel</p>
+                        >Cancel</button>
                         <ReactTooltip id={"cancel"} place={"top"}>
                             Clear all the form input
                         </ReactTooltip>
@@ -87,6 +112,7 @@ function UserInputDiv(props)
                         <button  className={"submit-Button"} type="submit">Post Now</button>
                     </div>
                 </div>
+                </form>
             </div>
 
 

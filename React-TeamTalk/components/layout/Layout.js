@@ -18,7 +18,7 @@ function Layout(props)
 {
     return (
         <Aux>
-            <Router>
+            {/*<Router>*/}
                 {/*<Axios/>*/}
                 {/*<HttpRequest/>*/}
                 <div>
@@ -27,7 +27,7 @@ function Layout(props)
                 <main className={'layout-main'}>
                     {props.children}
                 </main>
-            </Router>
+            {/*</Router>*/}
         </Aux>
     );
 }

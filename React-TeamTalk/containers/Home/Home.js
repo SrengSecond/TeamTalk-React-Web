@@ -7,25 +7,25 @@ import axios from "axios";
 
 class Home extends React.Component
 {
-
-
     render()
     {
          return(
              <div className="home-background" id={"home"}>
+
                  <main className="home-Title">
                     <div className="title">
                         <h1>Welcome</h1>
                         <h2>Right Place 4YOU</h2>
                     </div>
+
                     <p>A platform where you can be helped as accessing it </p>
+
                      <HashLink smooth to={"#explore"}>
                         <button className={"button-explore"}>
                             <i className="fas fa-arrow-down"/> Explore
                         </button>
                      </HashLink>
                  </main>
-
 
                  <footer>
                      <div>
@@ -44,7 +44,6 @@ class Home extends React.Component
                         <i className="fas fa-lightbulb fa-3x"/>
                         <p>Answer</p>
                      </div>
-
                  </footer>
 
              </div>

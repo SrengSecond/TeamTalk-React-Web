@@ -3,6 +3,7 @@ import LoadingOverlay from "react-loading-overlay";
 import Selector from "../../../../Selector/Selector";
 import * as Menu from "../../../../Selector/Menu";
 import { useForm } from "react-hook-form";
+import BounceLoader from 'react-spinners/BounceLoader'
 
 function CreatTeamFrom(props)
 {
@@ -56,12 +57,12 @@ function CreatTeamFrom(props)
         <div className={props.isCreateTeam ? "creatTeam-PopUp-open" : "creatTeam-PopUp-close"}>
             <LoadingOverlay
                 active={isLoading}
-                spinner
+                spinner={<div><i className="fab fa-galactic-republic fa-spin fa-6x"/></div> }
                 text='Create Your Team shortly...'>
                 <div className="header">
                     <h3>Create Team</h3>
                     <div className={"i-div"} onClick={props.handleCloseCreate}>
-                        <i className="fas fa-times fa-2x" />
+                        <i className="fas fa-times fa-2x " />
                     </div>
                 </div>
 

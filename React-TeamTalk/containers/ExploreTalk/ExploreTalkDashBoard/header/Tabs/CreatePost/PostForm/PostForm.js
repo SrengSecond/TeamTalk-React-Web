@@ -1,13 +1,36 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './PostForm.css'
 import {useForm} from 'react-hook-form'
 import './PostForm.css'
 import ReactTooltip from "react-tooltip";
 function PostForm(props)
 {
-    const { register, handleSubmit,getValues,formState:{errors} } = useForm();
+
+    const [clearInput,SetClearInput] = useState(false)
+    const { register,handleSubmit,getValues,formState:{errors} } = useForm();
+
+    const onSubmit = (data,event) =>
+    {
+        console.log("[PostForm.js] SubmitForm")
+        event.target.reset();
+        console.log(data)
+    };
+    const onCancel = (data,event) =>
+    {
+        console.log("[PostForm.js] ClearForm")
+        event.target.reset();
+        SetClearInput(pre => !pre)
+
+    }
+    const handleCancel = () =>
+    {
+        console.log("[PostForm.js] ClickCancel")
+        SetClearInput(pre => !pre)
+    }
+
     return(
         <div className={"PostForm"}>
+            <form onSubmit={handleSubmit(clearInput?onCancel:onSubmit)}>
             <div className="top">
                 <input type="text"
                        className={"questionTitle"}
@@ -64,19 +87,21 @@ function PostForm(props)
 
 
                 <div className="submit-div">
-                    <p
+                    <button
+                        onClick={handleCancel}
                         className="submit-cancel"
                         data-tip data-for={"cancel"}
-                    >Cancel</p>
+                    >Cancel</button>
+
                     <ReactTooltip id={"cancel"} place={"top"}>
                         Clear all the form input
                     </ReactTooltip>
 
                     <p className="space">or</p>
-                    <button  className={"submit-Button"} type="submit">Post Now</button>
+                    <button className={"submit-Button"} type="submit">Post Now</button>
                 </div>
             </div>
-
+            </form>
         </div>
     );
 

@@ -14,32 +14,30 @@ import ScrollToTop from "./containers/ScrollToUp/ScrollToTop";
 import {connect} from 'react-redux'
 import * as ActionTypes from '../store/action'
 import ExploreTalkDashBoard from "./containers/ExploreTalk/ExploreTalkDashBoard/ExploreTalkDashBoard";
-
-
+import {useLocation} from "react-router-dom"
 
 const App = (props) =>
 {
+    // const {search} = useLocation();
+    // console.log(search);
+
     return (
         <div>
-            <Router>
-                <Layout>
-                    <ScrollToTop/>
+            <Layout>
+                <ScrollToTop/>
+                {/*<h1>{props.count}</h1>*/}
+                {/*<button onClick={props.onIncrement}>increment</button>*/}
+                {/*<button onClick={props.onDecrement}>decrement</button>*/}
 
-                    {/*<h1>{props.count}</h1>*/}
-                    {/*<button onClick={props.onIncrement}>increment</button>*/}
-                    {/*<button onClick={props.onDecrement}>decrement</button>*/}
-
-                    <Switch>
-
-                        <Redirect exact from={"/"} to={"/home"}/>
-                        <Route path={'/home'} component={WelcomePage}/>
-                        <Route path={'/exploreTeam'} component={ExploreTeamDashBoard}/>
-                        <Route path={'/exploreTalk'} component={ExploreTalkDashBoard}/>
-                        {/*<Route path={'/find_team/find'}  component={ExploreTeamDashBoard}/>*/}
-                    </Switch>
-
-                </Layout>
-            </Router>
+                <Switch>
+                    <Redirect exact from={"/"} to={"/home"}/>
+                    <Route path={'/home'} component={WelcomePage}/>
+                    <Route path={'/exploreTeam'} component={ExploreTeamDashBoard}/>
+                    <Route path={'/exploreTalk'} component={ExploreTalkDashBoard}/>
+                    <Route>404 Not Fount!</Route>
+                    {/*<Route path={'/find_team/find'}  component={ExploreTeamDashBoard}/>*/}
+                </Switch>
+            </Layout>
         </div>
 
 );

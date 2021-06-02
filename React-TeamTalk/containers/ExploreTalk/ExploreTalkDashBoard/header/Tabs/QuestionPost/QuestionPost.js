@@ -10,6 +10,7 @@ function QuestionPost(props) {
                     <h1 className={"QuestionTitle"}>All Questions</h1>
                     <p className={"QuestionCount"}>Question: {props.questionCount}</p>
                 </div>
+
                 <div className="right">
                     <Filter/>
                 </div>

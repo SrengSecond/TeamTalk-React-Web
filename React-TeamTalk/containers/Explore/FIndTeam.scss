@@ -1,25 +1,85 @@
-.join-team
+.features-card
 {
+  //border:2px solid var(--primary_gray_border);
+  z-index:1;
   margin:10px;
-  border-radius: 25px;
+  border-radius: 10px;
   padding:25px 15px;
-  background-color:#fff;
-  height: 350px;
-
+  //background-color:#fff;
+  height: 500px;
+  width:360px;
   display: flex;
 
-  .join-team-wrapper
+  //background-image: url(/src/React-TeamTalk/assets/image/pyramids-starry-green.jpg);
+  background-size: cover;
+  //background-repeat: no-repeat;
+  background-position-x: 60%;
+  background-position-y: -1rem;
+  transition-duration: .5s;
+  transition-timing-function: ease-out;
+  transition-property: height,width;
+
+
+
+  &:hover
   {
-    text-align:center;
-    h1
+    height: 520px;
+    width:380px;
+    outline:2px solid #fff;
+    --underline_width:100%;
+  }
+
+
+  .features-card-wrapper
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    .cardTitle-Div
     {
-      margin-bottom: 16px;
-    }
-    .text-div
-    {
-      margin: 25px 0 35px 0;
       display: flex;
-      align-items:center;
+      .cardTitle
+      {
+        color:#fff;
+        position:relative;
+        padding-bottom: 4px;
+        display: flex;
+      }
+    }
+    //.underlineCard
+    //{
+    //  --padding_underline:15px;
+    //  position: absolute;
+    //  content: "";
+    //  height:4px;
+    //  width: calc(100% + var(--padding_underline));
+    //  left: calc(var(--padding_underline) * -1);
+    //  //top:0;
+    //  bottom:0;
+    //  background-color:var(--primary);
+    //}
+
+    .underlineCard
+    {
+      --padding_underline:15px;
+      position: absolute;
+      content: "";
+      height:4px;
+      //width: calc(100% + var(--padding_underline));
+      width: calc(100% + var(--padding_underline));
+      left: calc(var(--padding_underline) * -1);
+
+      bottom:0;
+      background-color:var(--primary);
+    }
+
+    .cardDetail
+    {
+      color:#fff;
+
+      //margin: 25px 0 35px 0;
+      margin-top:16px;
+      display: flex;
       width:300px;
       height: 100px;
       p
@@ -30,13 +90,13 @@
 
     .findTeam-button
     {
-      margin-top: 16px;
       padding: 10px 30px;
-      border-radius: 10px;
+      border-radius: 5px;
       outline: none;
-      border: 2px solid var(--home_primary);
+      border:none;
+      //border: 3px solid var(--home_primary);
 
-      font-size: 18px;
+      font-size: 14px;
       color: #fff;
       cursor: pointer;
       background-color: var(--home_primary);
@@ -46,9 +106,8 @@
         transition: all 0.3s ease-in-out;
         background-color: #fff;
         color: var(--home_primary);
-        border-radius: 10px;
 
-        border: 2px solid var(--home_primary)
+        //border: 2px solid var(--home_primary)
       }
     }
   }

@@ -1,13 +1,15 @@
 .ExploreCompoment-div
 {
   display: flex;
-  background-color: #0B111D;
+  align-items: center;
+  //background-color: #0B111D;
+  background: rgba(11, 17, 29, .75) url(../../assets/image/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-retr-7.jpg) no-repeat center center fixed;
+  background-blend-mode: multiply;
+  background-size: cover;
+
   height:100vh;
   justify-content: center;
-  align-items: center;
-  background-position:center;
-  background-size: cover;
-  background-repeat:no-repeat;
+  //background-repeat:no-repeat;
   div
   {
     .title-name
@@ -22,8 +24,9 @@
     }
     .explore-Item
     {
-      margin-top: 50px;
+      margin-top: 26px;
       display: flex;
+      align-items: center;
     }
   }
 }
