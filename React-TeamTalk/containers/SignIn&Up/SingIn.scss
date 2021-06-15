@@ -15,8 +15,8 @@
   {
 
     margin: 0;
-    border-left: 30px solid var(--pink_primary);
-    padding: 50px;
+    border-left: 24px solid var(--pink_primary);
+    padding: 35px;
 
 
     .login-Title
@@ -26,6 +26,10 @@
     }
     form
     {
+      .errorsMessage
+      {
+        color: var(--primary)
+      }
       margin-top: 26px;
       .input-label
       {
@@ -33,7 +37,7 @@
         margin-bottom: 10px;
       }
 
-      input[type=text]
+      input[type=text],input[type=password]
       {
         margin-top:5px;
         margin-bottom: 15px;
@@ -71,10 +75,15 @@
     }
   }
 }
+.askingAccount_txt
+{
+  color: var(--gray_second_primary);
+  text-align: center;
 
+}
 .primary-button
 {
-  margin-top:10px;
+  margin:10px 0;
   padding: 8px 0;
   width:var(--width_primary);
   height:var(--height_primary);
@@ -85,10 +94,10 @@
   color: #fff;
   cursor: pointer;
   background-color: var(--pink_primary);
+  transition: all 0.3s ease-in-out;
 
   &:hover
   {
-    transition: all 0.3s ease-in-out;
     background-color: var(--input_background);
     color: var(--pink_primary);
     border-radius: 4px;
@@ -102,3 +111,23 @@
     font-size:25px;
   }
 }
+
+.newline
+{
+  text-align: center;
+  color: var(--primary_gray);
+}
+
+//.registerLink
+//{
+//  .primary-button
+//  {
+//    background-color: var(--primary_gray_border);
+//    color: var(--pink_primary);
+//    &:hover
+//    {
+//      background-color: var(--input_background);
+//
+//    }
+//  }
+//}

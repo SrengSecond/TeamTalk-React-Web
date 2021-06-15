@@ -1,0 +1,178 @@
+:root {
+  --txtBackGround:#F6F6F6;
+}
+
+.QuestionDiv .QuestionDiv-header {
+  margin: 20px 0 10px 0;
+  display: flex;
+  align-items: center;
+}
+.QuestionDiv .QuestionDiv-header .header-title {
+  flex-grow: 5;
+  margin-left: 20px;
+  font-family: var(--interfont);
+  font-weight: normal;
+}
+.QuestionDiv .QuestionDiv-header .icon {
+  flex-grow: 1;
+  display: flex;
+  margin-left: 100px;
+}
+.QuestionDiv .QuestionDiv-header .icon .icon-share {
+  margin-right: 10px;
+  color: var(--primary_gray);
+}
+.QuestionDiv .QuestionDiv-header .icon .icon-share:hover {
+  color: var(--primary_hover_P);
+  cursor: pointer;
+}
+.QuestionDiv .QuestionDiv-header .icon .icon-save {
+  color: var(--primary_gray);
+}
+.QuestionDiv .QuestionDiv-header .icon .icon-save:hover {
+  color: var(--primary_hover_P);
+  cursor: pointer;
+}
+.QuestionDiv .QuestionDiv-main {
+  flex-grow: 1;
+  padding: 10px 10px 5px 10px;
+  display: flex;
+  background-color: #fff;
+}
+.QuestionDiv .QuestionDiv-main .left {
+  text-align: center;
+}
+.QuestionDiv .QuestionDiv-main .left .userProfile {
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--primary_hover_P);
+}
+.QuestionDiv .QuestionDiv-main .left .userName {
+  font-family: var(--interfont);
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.QuestionDiv .QuestionDiv-main .left .userDetail {
+  font-family: var(--interfont);
+  font-size: 10px;
+  color: var(--primary_gray);
+}
+.QuestionDiv .QuestionDiv-main .middle {
+  margin-right: 100px;
+  padding: 0 10px 15px 15px;
+  flex-grow: 2;
+  width: 700px;
+  min-height: 150px;
+  border-bottom: 2px solid var(--primary_gray_border);
+}
+.QuestionDiv .QuestionDiv-main .middle .middle-top {
+  display: flex;
+}
+.QuestionDiv .QuestionDiv-main .middle .middle-top .questionTitle {
+  flex-grow: 1;
+  font-family: var(--interfont);
+  color: var(--primary);
+  font-size: 20px;
+  text-decoration: none;
+}
+.QuestionDiv .QuestionDiv-main .middle .middle-top .middle-top-right {
+  text-align: right;
+}
+.QuestionDiv .QuestionDiv-main .middle .middle-top .middle-top-right .questionTag {
+  font-family: var(--interfont);
+  font-weight: normal;
+  color: #4D4D4D;
+  font-size: 14px;
+}
+.QuestionDiv .QuestionDiv-main .middle .middle-top .middle-top-right .publishedTime {
+  font-family: var(--interfont);
+  color: #808080;
+  font-size: 10px;
+}
+.QuestionDiv .QuestionDiv-main .middle .questionDescription {
+  outline: 3px solid var(--primary);
+  outline-offset: 6px;
+  background-color: var(--txtBackGround);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-family: var(--interfont);
+  font-weight: normal;
+}
+.QuestionDiv .QuestionDiv-main .middle .question-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.QuestionDiv .QuestionDiv-main .middle .question-bottom .write-answer {
+  font-family: var(--interfont);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 5px 10px;
+  background-color: var(--primary);
+  outline-offset: 1px;
+  outline: 2px solid var(--primary);
+}
+.QuestionDiv .QuestionDiv-main .middle .question-bottom .write-answer:hover {
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: all 0.4s ease-in-out;
+  background-color: var(--primary_gray_background);
+  color: var(--primary);
+}
+.QuestionDiv .QuestionDiv-main .middle .question-bottom .QuestionOwner {
+  display: flex;
+}
+.QuestionDiv .QuestionDiv-main .middle .question-bottom .QuestionOwner .userProfile {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+.QuestionDiv .QuestionDiv-main .middle .question-bottom .QuestionOwner .userDetail .userName {
+  font-family: var(--interfont);
+  font-weight: bold;
+  font-size: 16px;
+}
+.QuestionDiv .QuestionDiv-main .middle .question-bottom .QuestionOwner .userDetail .department {
+  font-family: var(--interfont);
+  font-size: 12px;
+  color: #757272;
+}
+.QuestionDiv .QuestionDiv-main .right {
+  margin-left: 10px;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+}
+.QuestionDiv .QuestionDiv-main .right .Upvote_icons {
+  padding: 4px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  color: var(--primary_gray);
+  outline: 2px solid var(--primary_gray);
+}
+.QuestionDiv .QuestionDiv-main .right .Upvote_icons p {
+  font-family: var(--interfont);
+  font-size: 12px;
+}
+.QuestionDiv .QuestionDiv-main .right .Answer_icons {
+  outline: 2px solid var(--primary);
+  border-radius: 2px;
+  color: var(--primary);
+  background-color: #fff;
+  padding: 4px;
+}
+.QuestionDiv .QuestionDiv-main .right .Answer_icons p {
+  font-family: var(--interfont);
+  font-size: 12px;
+}
+.QuestionDiv .QuestionDiv-main .right .ViewCount {
+  margin-top: 5px;
+  font-family: var(--interfont);
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=QuestionDiv.css.map */

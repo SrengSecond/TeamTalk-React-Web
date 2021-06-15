@@ -1,50 +1,87 @@
 import React from 'react';
 import './SignUp.css'
+import {useForm} from "react-hook-form";
 
-class SignUp extends React.Component
+const SignUp = () =>
 {
-    render()
+    const { register, handleSubmit,getValues,formState:{errors} } = useForm();
+
+    const onSubmit = (data,e) =>
     {
-        return(
-            <div className="signUp-component">
-                <div className={"signUp-form"}>
-                    <h1 className={"form-title"}>REGISTRATION FORM</h1>
-                    <div className="registration-form">
-                        <form action="">
-                            <label htmlFor="">Name</label>
-                            <input className={"first-name-col"} type="text"/>
-                            <input className={"last-name-col"} type="text"/>
+        console.log(data)
+        e.target.reset();
+    }
+    return(
+        <div className="signUp-component">
+            <div className={"signUp-form"}>
+                <h1 className={"form-title"}>REGISTRATION FORM</h1>
+                <div className="registration-form">
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                        <label htmlFor="">Name</label>
 
-                            <label className={"first-name-label"} htmlFor="">First Name</label>
-                            <label className={"last-name-label"} htmlFor="">Last Name</label>
+                        <input className={"first-name-col"}
+                               required
+                               type="text"
+                               {...register("firstName",{required:"This field is required",maxLength:{value:18,message:"You exceeded the max 18 length"}})}
+                        />
 
-                            <label htmlFor="">School</label>
-                            <input type="text"/>
+                        {errors.firstName && <p>{errors.email.message}</p>}
 
-                            <label htmlFor="">Major</label>
-                            <input className={"major"} type="text"/>
+                        <input
+                            className={"last-name-col"}
+                            required
 
-                            <label className={"year-label"} htmlFor="">Year</label>
-                            <input className={"year"} type="number"/>
+                            type="text"
+                            {...register("lastName",{required:"This field is required",maxLength:{value:18,message:"You exceeded the max 18 length"}})}
+                        />
 
-                            <label htmlFor="">Email</label>
-                            <input type="email"/>
+                        {errors.lastName && <p>{errors.email.message}</p>}
 
-                            <label htmlFor="">Password</label>
-                            <input type="password"/>
+                        <label className={"first-name-label"}>First Name</label>
+                        <label className={"last-name-label"}>Last Name</label>
 
-                            <label htmlFor="">Confirm</label>
-                            <input type="password"/>
+                        {/*<label htmlFor="">School</label>*/}
+                        {/*<input type="text"/>*/}
 
-                            <label htmlFor="">Phone</label>
-                            <input type="number"/>
+                        {/*<label htmlFor="">Major</label>*/}
+                        {/*<input className={"major"} type="text"/>*/}
 
-                            <button className={"submit-button"} type="submit">REGISTER</button>
-                        </form>
-                    </div>
+                        {/*<label className={"year-label"} htmlFor="">Year</label>*/}
+                        {/*<input className={"year"} type="number"/>*/}
+
+                        <label htmlFor="">Email</label>
+
+                        <input
+                            type="email"
+                            required
+
+                            {...register("email",{required:"This field is required",maxLength:{value:28,message:"You exceeded the max 28 length"}})}
+                        />
+
+                        <label htmlFor="">Password</label>
+                        <input
+                            type="password"
+                            required
+
+                            {...register("password",{required:"This field is required",maxLength:{value:28,message:"You exceeded the max 28 length"}})}
+                        />
+
+                        <label htmlFor="">Confirm</label>
+                        <input
+                            type="Password"
+                            required
+
+                            {...register("conPassword",{required:"This field is required",maxLength:{value:28,message:"You exceeded the max 28 length"}})}
+                        />
+
+                        {/*<label htmlFor="">Phone</label>*/}
+                        {/*<input type="number"/>*/}
+
+                        <button className={"submit-button"} type="submit">CONFIRM</button>
+                    </form>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 export default SignUp

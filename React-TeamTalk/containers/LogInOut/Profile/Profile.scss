@@ -1,0 +1,47 @@
+.profile
+{
+  display:flex;
+  justify-content:center;
+  .profile-flex
+  {
+    flex-direction: column;
+    display: flex;
+    //text-align: center;
+    .top
+    {
+      text-align: center;
+
+    }
+    .middle
+    {
+      .middle-department
+      {
+        align-items:center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .middle-category
+      {
+        .middle-category-left
+        {
+          .middle-category-div
+          {
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+          }
+        }
+        .middle-category-right
+        {
+          .profile-image
+          {
+            //display:none;
+            width:75px;
+            height:75px;
+          }
+        }
+      }
+    }
+  }
+}
+

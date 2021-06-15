@@ -11,8 +11,8 @@ class LogInOut extends React.Component
     {
         return(
             <div className="logInOut-background" id={"sign-up"}>
-                {/*<SignUpLog/> <SignUp/>*/}
-                <SignInLog/> <SignIn/>
+                <SignInLog/>
+                <SignIn/>
             </div>
         )
     }

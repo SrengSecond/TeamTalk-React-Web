@@ -22,7 +22,7 @@ function Layout(props)
                 {/*<Axios/>*/}
                 {/*<HttpRequest/>*/}
                 <div>
-                    <Navbar/>
+                    {/*<Navbar/>*/}
                 </div>
                 <main className={'layout-main'}>
                     {props.children}

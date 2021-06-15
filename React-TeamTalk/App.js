@@ -15,6 +15,9 @@ import {connect} from 'react-redux'
 import * as ActionTypes from '../store/action'
 import ExploreTalkDashBoard from "./containers/ExploreTalk/ExploreTalkDashBoard/ExploreTalkDashBoard";
 import {useLocation} from "react-router-dom"
+import Register from "./containers/LogInOut/Register";
+import Profile from "./containers/LogInOut/Profile/Profile";
+
 
 const App = (props) =>
 {
@@ -25,6 +28,7 @@ const App = (props) =>
         <div>
             <Layout>
                 <ScrollToTop/>
+
                 {/*<h1>{props.count}</h1>*/}
                 {/*<button onClick={props.onIncrement}>increment</button>*/}
                 {/*<button onClick={props.onDecrement}>decrement</button>*/}
@@ -32,9 +36,12 @@ const App = (props) =>
                 <Switch>
                     <Redirect exact from={"/"} to={"/home"}/>
                     <Route path={'/home'} component={WelcomePage}/>
+                    <Route path={'/register'} exact component={Register}/>
+                    <Route path={'/register/profile'} component={Profile}/>
                     <Route path={'/exploreTeam'} component={ExploreTeamDashBoard}/>
                     <Route path={'/exploreTalk'} component={ExploreTalkDashBoard}/>
                     <Route>404 Not Fount!</Route>
+
                     {/*<Route path={'/find_team/find'}  component={ExploreTeamDashBoard}/>*/}
                 </Switch>
             </Layout>
@@ -51,7 +58,7 @@ const mapStateToProps = (state) =>
 }
 const mapDispatchToProps = (dispatch) =>
 {
-    return{
+    return {
         onIncrement: () => dispatch({type:ActionTypes.INCREMENT,value:10}),
         onDecrement: () => dispatch({type:ActionTypes.DECREMENT,value:10}),
     }

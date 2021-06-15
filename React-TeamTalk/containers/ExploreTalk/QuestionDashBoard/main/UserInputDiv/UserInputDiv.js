@@ -17,6 +17,7 @@ function UserInputDiv(props)
         event.target.reset();
         console.log(data)
     };
+
     const onCancel = (data,event) =>
     {
         console.log("[PostForm.js] ClearForm")
@@ -24,6 +25,7 @@ function UserInputDiv(props)
         SetClearInput(pre => !pre)
 
     }
+
     const handleCancel = () =>
     {
         console.log("[PostForm.js] ClickCancel")
@@ -40,6 +42,7 @@ function UserInputDiv(props)
                 <div className={"input_label"}>
                     <h2>Write Your Answer here</h2>
                 </div>
+
                 <form onSubmit={handleSubmit(clearInput?onCancel:onSubmit)}>
 
                 <div className="top">

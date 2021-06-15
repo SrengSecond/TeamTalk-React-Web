@@ -14,6 +14,7 @@ import './index.css'
 import reducer from "./store/reducer";
 import {BrowserRouter as Router} from "react-router-dom";
 
+
 const store = createStore(reducer,  composeWithDevTools());
 
 //Store -> globalized state

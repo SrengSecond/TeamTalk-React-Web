@@ -1,0 +1,115 @@
+.PostForm {
+  padding: 15px;
+}
+.PostForm .top {
+  display: flex;
+}
+.PostForm .top .questionTitle, .PostForm .top .tag-div {
+  font-family: var(--interfont);
+  font-size: 16px;
+  outline: none;
+  border: 1px solid var(--primary_gray_boder_input);
+  padding: 8px 10px;
+  color: black;
+}
+.PostForm .top .questionTitle:focus, .PostForm .top .tag-div:focus {
+  outline: 2px solid var(--primary);
+  border: 1px solid transparent;
+}
+.PostForm .top .questionTitle {
+  margin-right: 6px;
+  flex-grow: 2;
+}
+.PostForm .top .tag-div {
+  flex-grow: 0;
+  width: 160px;
+}
+.PostForm .top .department {
+  margin-right: 6px;
+  flex-grow: 0;
+  font-family: var(--interfont);
+  font-size: 16px;
+  outline: none;
+  padding: 8px 10px;
+  color: black;
+  width: 100px;
+  border: 1px solid var(--primary_gray_boder_input);
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) #fff no-repeat right;
+  -webkit-appearance: none;
+  background-position-x: 70px;
+}
+.PostForm .top .department:focus {
+  outline: 2px solid var(--primary);
+  border: 1px solid transparent;
+}
+.PostForm .middle {
+  margin: 8px 0;
+  display: flex;
+  height: 120px;
+}
+.PostForm .middle .textareaInput {
+  font-family: var(--interfont);
+  flex-grow: 1;
+  padding: 10px;
+  resize: none;
+  border: 1px solid var(--primary_gray_boder_input);
+}
+.PostForm .middle .textareaInput:focus {
+  border: 1px solid transparent;
+  outline: 2px solid var(--primary);
+}
+.PostForm .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.PostForm .bottom .iconButtons {
+  display: flex;
+  align-items: center;
+}
+.PostForm .bottom .iconButtons .iconButton {
+  margin-right: 15px;
+  margin-left: 5px;
+  color: var(--primary_gray_boder_input);
+}
+.PostForm .bottom .iconButtons .iconButton:hover {
+  cursor: pointer;
+  color: var(--primary);
+}
+.PostForm .bottom .submit-div {
+  display: flex;
+  align-items: center;
+}
+.PostForm .bottom .submit-div .submit-cancel {
+  font-family: var(--interfont);
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+.PostForm .bottom .submit-div .submit-cancel:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--primary);
+}
+.PostForm .bottom .submit-div .space {
+  font-family: var(--interfont);
+  margin: 0 12px;
+}
+.PostForm .bottom .submit-div .submit-Button {
+  background-color: var(--primary);
+  text-align: center;
+  width: 150px;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  border: 2px solid transparent;
+  padding: 8px 12px;
+  border-radius: 2px;
+}
+.PostForm .bottom .submit-div .submit-Button:hover {
+  background-color: var(--primary_gray_background);
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=PostForm.css.map */

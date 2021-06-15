@@ -1,0 +1,27 @@
+.profile {
+  display: flex;
+  justify-content: center;
+}
+.profile .profile-flex {
+  flex-direction: column;
+  display: flex;
+}
+.profile .profile-flex .top {
+  text-align: center;
+}
+.profile .profile-flex .middle .middle-department {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.profile .profile-flex .middle .middle-category .middle-category-left .middle-category-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile .profile-flex .middle .middle-category .middle-category-right .profile-image {
+  width: 75px;
+  height: 75px;
+}
+
+/*# sourceMappingURL=Profile.css.map */

@@ -1,0 +1,102 @@
+:root {
+  --question_Description_Width:700px;
+  --question_Description_Height:130px;
+}
+
+.Question {
+  border-bottom: 1px solid var(--primary_gray_border);
+  flex-grow: 1;
+  padding: 10px 10px 5px 10px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.Question .left {
+  text-align: center;
+}
+.Question .left .userProfile {
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--primary_hover_P);
+}
+.Question .left .userName {
+  font-family: var(--interfont);
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.Question .left .userDetail {
+  font-family: var(--interfont);
+  font-size: 10px;
+  color: var(--primary_gray);
+}
+.Question .middle {
+  border-right: 1px solid var(--primary_gray_border);
+  padding: 0 10px 15px 15px;
+  flex-grow: 2;
+  width: 700px;
+  height: 130px;
+}
+.Question .middle .middle-top {
+  display: flex;
+}
+.Question .middle .middle-top .questionTitle {
+  flex-grow: 1;
+  font-family: var(--interfont);
+  color: var(--primary);
+  font-size: 20px;
+  text-decoration: none;
+}
+.Question .middle .middle-top .middle-top-right {
+  text-align: right;
+}
+.Question .middle .middle-top .middle-top-right .questionTag {
+  font-family: var(--interfont);
+  font-weight: normal;
+  color: #4D4D4D;
+  font-size: 14px;
+}
+.Question .middle .middle-top .middle-top-right .publishedTime {
+  font-family: var(--interfont);
+  color: #808080;
+  font-size: 10px;
+}
+.Question .middle .questionDescription {
+  margin-top: 10px;
+  font-family: var(--interfont);
+  font-weight: normal;
+}
+.Question .right {
+  margin-left: 10px;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+}
+.Question .right .Upvote_icons {
+  padding: 4px;
+  margin-bottom: 5px;
+  color: var(--primary_gray);
+}
+.Question .right .Upvote_icons p {
+  font-family: var(--interfont);
+  font-size: 12px;
+}
+.Question .right .Answer_icons {
+  border-radius: 2px;
+  color: #fff;
+  background-color: var(--primary_hover_P);
+  padding: 4px;
+}
+.Question .right .Answer_icons p {
+  font-family: var(--interfont);
+  font-size: 12px;
+}
+.Question .right .ViewCount {
+  margin-top: 5px;
+  font-family: var(--interfont);
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=Question.css.map */

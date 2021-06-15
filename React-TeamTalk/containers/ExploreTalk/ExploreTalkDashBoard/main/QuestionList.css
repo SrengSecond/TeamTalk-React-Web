@@ -1,0 +1,10 @@
+:root {
+  --primary_Question_height:200px;
+}
+
+.QuestionList {
+  min-height: 315px;
+  background-color: var(--primary_gray_background);
+}
+
+/*# sourceMappingURL=QuestionList.css.map */

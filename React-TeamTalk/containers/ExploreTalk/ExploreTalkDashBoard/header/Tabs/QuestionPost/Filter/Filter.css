@@ -1,0 +1,24 @@
+.Filter .Filter-clickable {
+  display: flex;
+  outline: 2px solid var(--primary);
+  outline-offset: 0;
+}
+.Filter .Filter-clickable:hover {
+  outline-offset: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.Filter .Filter-hover {
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-top: 6px;
+  outline: 2px solid var(--primary);
+}
+.Filter .Filter-hover .MenuFilter {
+  z-index: 1;
+}
+.Filter .Filter-hover-left {
+  display: none;
+}
+
+/*# sourceMappingURL=Filter.css.map */

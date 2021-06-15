@@ -142,6 +142,7 @@ function CreatTeamFrom(props)
                                 <input type="text" className={"optional_input"} placeholder={"Tag1, Tag2, ..."} {...register("tag")}/>
 
                                 <input type="text" className={"optional_input"} placeholder={"Location - school - University"} {...register("location")}/>
+
                             </div>
                         </div>
                     </div>

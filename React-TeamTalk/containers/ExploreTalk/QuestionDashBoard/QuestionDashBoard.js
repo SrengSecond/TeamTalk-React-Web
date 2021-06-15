@@ -71,6 +71,7 @@ function QuestionDashBoard(props)
         </header>
 
         <main>
+
             <QuestionDiv
                 key={1}
                 name={"Ly Sreng"}
@@ -96,7 +97,9 @@ function QuestionDashBoard(props)
                        viewCount={"15"}
                        voteCount={10}
                        answerCount={52}/>
+
             <UserInputDiv/>
+            
         </main>
     </>
 

@@ -14,6 +14,7 @@ const ExploreCompoment = () =>
                 </div>
 
                 <div  className={"explore-Item"}>
+
                     <FeatureCard title={"TalkMore"}
                                  description={"At there, you can freely seek any answer in response to your question as well as help answer others’."}
                                  button={"LEARN MORE"}
@@ -24,7 +25,6 @@ const ExploreCompoment = () =>
                                  description={"At there, you can freely and easily form a team to fullfil your project as well as find any existing team to be part of that team’s project."}
                                  button={"LEARN MORE"}
                                  backgroundimg={TeamBackground}
-
                     />
 
                     <FeatureCard title={"ManageTeam"}
