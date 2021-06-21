@@ -26,7 +26,7 @@ const SignUp = () =>
                                {...register("firstName",{required:"This field is required",maxLength:{value:18,message:"You exceeded the max 18 length"}})}
                         />
 
-                        {errors.firstName && <p>{errors.email.message}</p>}
+                        {/*{errors.firstName && <p>{errors.email.message}</p>}*/}
 
                         <input
                             className={"last-name-col"}
@@ -36,7 +36,7 @@ const SignUp = () =>
                             {...register("lastName",{required:"This field is required",maxLength:{value:18,message:"You exceeded the max 18 length"}})}
                         />
 
-                        {errors.lastName && <p>{errors.email.message}</p>}
+                        {/*{errors.lastName && <p>{errors.email.message}</p>}*/}
 
                         <label className={"first-name-label"}>First Name</label>
                         <label className={"last-name-label"}>Last Name</label>
@@ -77,9 +77,9 @@ const SignUp = () =>
                         {/*<label htmlFor="">Phone</label>*/}
                         {/*<input type="number"/>*/}
 
-                        <Link to={'/register/profile'}>
+                        {/*<Link to={'/register/profile'}>*/}
                             <button className={"submit-button"} type="submit">CONFIRM</button>
-                        </Link>
+                        {/*</Link>*/}
                     </form>
                 </div>
             </div>

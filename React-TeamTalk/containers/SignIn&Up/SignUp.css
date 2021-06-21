@@ -71,9 +71,9 @@
   color: #fff;
   cursor: pointer;
   background-color: var(--pink_primary);
+  transition: all 0.3s ease-in-out;
 }
 .signUp-component .signUp-form .registration-form form .submit-button:hover {
-  transition: all 0.3s ease-in-out;
   background-color: var(--input_background);
   color: var(--pink_primary);
   border-radius: 4px;

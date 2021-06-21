@@ -139,6 +139,7 @@ function Profile(props)
                     </div>
 
                     <div className={"middle-category"}>
+
                         <div className="middle-category-left">
 
                             <div className={"middle-category-div"}>
@@ -179,24 +180,29 @@ function Profile(props)
                                     <option value={6}>Hobby projects</option>
                                 </select>
                             </div>
+
                         </div>
 
-                        <button type="submit">submit</button>
-
                         {/*<input*/}
-                        {/*    // onChange={handleChangeImage}*/}
+                        {/*    className={"custom-file-input"}*/}
                         {/*    onChange={handleChangeImage}*/}
-                        {/*    type="file"/>*/}
+                        {/*    type="file"*/}
+                        {/*    accept={".jpg,.png,.pdf"}*/}
+                        {/*/>*/}
 
-                        {/*<button*/}
-                        {/*type={"button"}*/}
-                        {/*    onClick={()=>*/}
-                        {/*{*/}
-                        {/*    console.log(getValues("imageProfile"));*/}
-                        {/*}}>SIUC</button>*/}
+                        <div className={"upload-btn-wrapper"}>
+                            <button className={"btns"}>Upload Image</button>
+                            <input className={"myfile"}
+                                   type="file"
+                                   id="file"
+                                   accept={".jpg,.png,.pdf"}
+                                   aria-label="File browser example"/>
+                        </div>
 
                     </div>
                 </div>
+
+                    <button type="submit">submit</button>
 
                 </form>
                 {/*<div className="bottom">

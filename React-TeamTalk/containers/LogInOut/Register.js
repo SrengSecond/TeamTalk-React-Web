@@ -6,7 +6,6 @@ import SignUp from "../SignIn&Up/SignUp";
 import HomeButton from "../Button/HomeButton";
 import {Link} from "react-router-dom";
 
-
 function Register(props)
 {
     return (
