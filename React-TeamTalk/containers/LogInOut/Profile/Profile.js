@@ -1,7 +1,13 @@
 import React,{useState} from 'react';
 import './Profile.css'
+import axios from 'axios'
 import DepartmentButton from "./DepartmentButton/DepartmentButton";
 import {useForm} from "react-hook-form";
+
+const api = axios.create({
+    baseURL:"http://localhost:8000/api/"
+})
+
 function Profile(props)
 {
     const [baseImage,setBaseImage] = useState("")
@@ -9,13 +15,12 @@ function Profile(props)
 
     const handleChangeImage = async(e) =>
     {
-        console.log("asd");
-
         const file = e.target.files[0]
         console.log(file);
 
         const base64 = await convertBase64(file)
         setBaseImage(base64)
+        console.log(base64);
     }
 
     const onSubmit = async (data,event) =>
@@ -29,11 +34,65 @@ function Profile(props)
         setBaseImage(base64)
         // console.log(event.target.files[0])
     }
-    const onSubmitData = (data) =>
+
+/*    const config =
+        {
+            data:{
+                name:"Sunset",
+                email:"day"
+            }
+        }*/
+
+    const requestGet = async () =>
     {
-        console.log(data)
+        let response = await api.get('/getSetting/5')
+            .then(res => {console.log(res.data)})
+    }
+    const requestPost = async () =>
+    {
+        let response = await api.post('/addNew',
+            {name:"Jackkob",email:"day2day"}
+            )
+            .then(res => {console.log(res.data)})
+    }
+    const requestUpdate = async () =>
+    {
+        let response = await api.delete('/update')
 
     }
+
+    const requestSearch = async (searchKey) =>
+    {
+        let response = await api.get(`/search/${searchKey}`)
+            .then(res => {console.log(res.data)})
+    }
+
+    const requestDelete = async (id) =>
+    {
+        let response = await api.delete(`/deleteData/${id}`)
+            .then(res => {console.log(res.data)})
+            .catch(error=>
+            {
+                console.log("Err",error);
+            })
+    }
+
+    const onSubmitData =  (data) =>
+    {
+        console.log(data)
+        // requestPost();
+        // requestGet();
+        // requestSearch("sun");
+        // requestDelete(9);
+
+        /*api.get(`/getSetting/`, /!*{
+        // api.get('/getSetting/4', /!*{
+                name:"Sunsets",
+                email:"days"
+            }*!/)
+            .then(res => {console.log(res.data)})*/
+    }
+
     const convertBase64 = (file) =>
     {
         return new Promise((resolve,reject) =>
@@ -65,10 +124,12 @@ function Profile(props)
 
                 <div className="middle">
                     <div className={"middle-department"}>
+
                         {/*<label>Department</label>*/}
                         {/*<DepartmentButton name={"ITED"}/>*/}
                         {/*<DepartmentButton name={"BIOD"}/>*/}
                         {/*<DepartmentButton name={"TEED"}/>*/}
+
                         <label>Department</label>
                         <select placeholder={"Activity"} className={"select-Activity"} id={"first-category"} {...register("department")}>
                             <option value={1}>BIOD</option>
@@ -118,30 +179,41 @@ function Profile(props)
                                     <option value={6}>Hobby projects</option>
                                 </select>
                             </div>
+                        </div>
 
-                        </div>
-                        
-                        <div className="middle-category-right">
-                            <img className={"profile-image"} src={baseImage} alt=""/>
-                        </div>
                         <button type="submit">submit</button>
+
+                        {/*<input*/}
+                        {/*    // onChange={handleChangeImage}*/}
+                        {/*    onChange={handleChangeImage}*/}
+                        {/*    type="file"/>*/}
+
+                        {/*<button*/}
+                        {/*type={"button"}*/}
+                        {/*    onClick={()=>*/}
+                        {/*{*/}
+                        {/*    console.log(getValues("imageProfile"));*/}
+                        {/*}}>SIUC</button>*/}
 
                     </div>
                 </div>
+
                 </form>
-                value={baseImage}
-                <div className="bottom">
-                    {/*<form onSubmit={handleSubmit(onSubmit)}>*/}
+                {/*<div className="bottom">
+                    <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="middle-category-right">
                             <input
-                                hidden
-                                   // onChange={handleChangeImage}
-                                   onChange={handleChangeImage}
-                                   type="file" {...register("picture")}/>
+                                type={"file"}
+                                {...register("imageProfile")}
+                            />
+
+                            <div className="middle-category-right">
+                                <img className={"profile-image"} src={getValues("imageProfile")} alt=""/>
+                            </div>
                         </div>
                         <button type="submit">submit</button>
-                    {/*</form>*/}
-                </div>
+                    </form>
+                </div>*/}
             </div>
         </div>
     );

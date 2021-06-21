@@ -16,7 +16,9 @@ import Question from "./main/Question/Question";
 import LoadingOverlay from "react-loading-overlay";
 function ExploreTalkDashBoard(props)
 {
-    {console.log("[ExploreTalkDashBoard.js] Render")}
+    {
+        console.log("[ExploreTalkDashBoard.js] Render");
+    }
 
     //state
     const [connect,question,SetQuestion] = useState(null);

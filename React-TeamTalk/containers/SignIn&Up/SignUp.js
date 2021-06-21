@@ -1,6 +1,7 @@
 import React from 'react';
 import './SignUp.css'
 import {useForm} from "react-hook-form";
+import {Link} from "react-router-dom";
 
 const SignUp = () =>
 {
@@ -70,14 +71,15 @@ const SignUp = () =>
                         <input
                             type="Password"
                             required
-
                             {...register("conPassword",{required:"This field is required",maxLength:{value:28,message:"You exceeded the max 28 length"}})}
                         />
 
                         {/*<label htmlFor="">Phone</label>*/}
                         {/*<input type="number"/>*/}
 
-                        <button className={"submit-button"} type="submit">CONFIRM</button>
+                        <Link to={'/register/profile'}>
+                            <button className={"submit-button"} type="submit">CONFIRM</button>
+                        </Link>
                     </form>
                 </div>
             </div>

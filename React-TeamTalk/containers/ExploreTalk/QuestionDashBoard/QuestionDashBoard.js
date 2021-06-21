@@ -38,7 +38,6 @@ function QuestionDashBoard(props)
 
     useEffect(()=>
     {
-
         if(QuestionId && QuestionId !== "") fetchQuestionDetail();
         return () =>
         {
