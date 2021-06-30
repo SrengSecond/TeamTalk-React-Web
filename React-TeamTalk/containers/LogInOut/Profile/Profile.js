@@ -1,8 +1,9 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import './Profile.css'
 import axios from 'axios'
 import DepartmentButton from "./DepartmentButton/DepartmentButton";
 import {useForm} from "react-hook-form";
+import defaultProfilers from '../../../../React-TeamTalk/assets/icon/profile_astronaut.png'
 
 const api = axios.create({
     baseURL:"http://localhost:8000/api/"
@@ -12,6 +13,11 @@ function Profile(props)
 {
     const [baseImage,setBaseImage] = useState("")
     const { register, handleSubmit,getValues,formState:{errors} } = useForm();
+
+    useEffect(() =>
+    {
+        setBaseImage(defaultProfilers);
+    },[])
 
     const handleChangeImage = async(e) =>
     {
@@ -115,35 +121,38 @@ function Profile(props)
         <div className={"profile"}>
             <div className="profile-flex">
                 <form onSubmit={handleSubmit(onSubmitData)}>
-                <div className="top">
+                    <div className="top">
                     <h1 className={"Title"}>TeamTalk.</h1>
+
                     <p className={"description"}>
-                        Thank you for your information! You’ve almost done registration,<br/>
+                        Thank you for your information!
+                        You’ve almost done registration,
                         Please fill the optional requirement below to proceed!</p>
                 </div>
-
-                <div className="middle">
+                    <div className="middle">
                     <div className={"middle-department"}>
 
-                        {/*<label>Department</label>*/}
-                        {/*<DepartmentButton name={"ITED"}/>*/}
-                        {/*<DepartmentButton name={"BIOD"}/>*/}
-                        {/*<DepartmentButton name={"TEED"}/>*/}
-
                         <label>Department</label>
-                        <select placeholder={"Activity"} className={"select-Activity"} id={"first-category"} {...register("department")}>
-                            <option value={1}>BIOD</option>
-                            <option value={2}>ITED</option>
-                            <option value={3}>TTED</option>
-                        </select>
+                        <DepartmentButton name={"ITED"}/>
+                        <DepartmentButton name={"BIOD"}/>
+                        <DepartmentButton name={"TEED"}/>
+
+                        {/*<label>Department</label>*/}
+                        {/*<select placeholder={"Activity"} className={"select-Activity"} id={"first-category"} {...register("department")}>*/}
+                        {/*    <option value={1}>BIOD</option>*/}
+                        {/*    <option value={2}>ITED</option>*/}
+                        {/*    <option value={3}>TTED</option>*/}
+                        {/*</select>*/}
                     </div>
+
+                    <h4 className={"label-selection"}>Select Your main 3 Activity</h4>
 
                     <div className={"middle-category"}>
 
                         <div className="middle-category-left">
 
                             <div className={"middle-category-div"}>
-                                <label htmlFor={"first-category"}>1st Field of Interest</label>
+                                <label className={"selectLabel"} htmlFor={"first-category"}>1st Activity </label>
                                 <select placeholder={"Activity"} className={"select-Activity"} id={"first-category"} {...register("firstActivity")}>
                                     <option value={1}>Assignment</option>
                                     <option value={2}>Lab</option>
@@ -156,7 +165,7 @@ function Profile(props)
                             </div>
 
                             <div className={"middle-category-div"}>
-                                <label htmlFor={"second-category"}>2st Field of Interest</label>
+                                <label className={"selectLabel"} htmlFor={"second-category"}>2st Activity</label>
                                 <select placeholder={"Activity"} className={"select-Activity"} id={"second-category"} {...register("secondActivity")}>
                                     <option value={1}>Assignment</option>
                                     <option value={2}>Lab</option>
@@ -169,7 +178,7 @@ function Profile(props)
                             </div>
 
                             <div className={"middle-category-div"}>
-                                <label htmlFor={"Third-category"}>3rd Field of Interest</label>
+                                <label className={"selectLabel"} htmlFor={"Third-category"}>3rd Activity</label>
                                 <select placeholder={"Activity"} className={"select-Activity"} id={"Third-category"}{...register("thirdActivity")}>
                                     <option value={1}>Assignment</option>
                                     <option value={2}>Lab</option>
@@ -190,20 +199,29 @@ function Profile(props)
                         {/*    accept={".jpg,.png,.pdf"}*/}
                         {/*/>*/}
 
-                        <div className={"upload-btn-wrapper"}>
-                            <button className={"btns"}>Upload Image</button>
-                            <input className={"myfile"}
-                                   type="file"
-                                   id="file"
-                                   accept={".jpg,.png,.pdf"}
-                                   aria-label="File browser example"/>
+
+
+                        <div className={"middle-category-right"}>
+
+                            <img className="profileImgPreview" src={baseImage} alt=""/>
+
+                            <div className={"upload-btn-wrapper"}>
+                                <button className={"btns"}>Upload</button>
+                                <input className={"myfile"}
+                                       onChange={handleChangeImage}
+                                       type="file"
+                                       id="file"
+                                       accept={".jpg,.png"}
+                                       aria-label="File browser example"/>
+                            </div>
                         </div>
 
                     </div>
+
                 </div>
-
-                    <button type="submit">submit</button>
-
+                    <div className="bottom">
+                        <button className={"finishButton"} type="submit">Proceed</button>
+                    </div>
                 </form>
                 {/*<div className="bottom">
                     <form onSubmit={handleSubmit(onSubmit)}>
@@ -224,5 +242,4 @@ function Profile(props)
         </div>
     );
 }
-
 export default Profile;
