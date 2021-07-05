@@ -1,13 +1,14 @@
 import React from 'react';
 import './DepartmentButton.css'
 
-function DepartmentButton(props) {
+function DepartmentButton(props)
+{
     return (
-        <div className={"DepartmentButton"}>
-            <button className={"button"}>
+        <div className={props.classes}>
+            <button className={"button"}
+                    onClick={() => props.handleClick(props.name)}>
                 {props.name}
             </button>
-
         </div>
     );
 }

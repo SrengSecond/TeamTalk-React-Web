@@ -9,11 +9,13 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 /*import FreelancerApp from "./React-freelance/FreelanceApp";
 import MyBasicApp from "./ReactBasic/MyBasicApp";*/
 
-import App from './React-TeamTalk/App' // Project env
+// import App from './React-TeamTalk/App' // Project env
+// import App from './React-Adventure/App'
+
 import './index.css'
 import reducer from "./store/reducer";
 import {BrowserRouter as Router} from "react-router-dom";
-
+import App from "./React-UI-Component/App";
 
 const store = createStore(reducer,  composeWithDevTools());
 
@@ -57,6 +59,7 @@ ReactDOM.render(
     /*<React.StrictMode>*/
     <Router>
         <Provider store={store}>
+            {/*<App/>*/}
             <App/>
         </Provider>
     </Router>

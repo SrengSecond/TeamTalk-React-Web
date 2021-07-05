@@ -1,9 +1,11 @@
 import React,{useState,useEffect} from 'react';
+import {Link} from 'react-router-dom'
 import './Profile.css'
 import axios from 'axios'
 import DepartmentButton from "./DepartmentButton/DepartmentButton";
 import {useForm} from "react-hook-form";
 import defaultProfilers from '../../../../React-TeamTalk/assets/icon/profile_astronaut.png'
+import Departments from "./DepartmentButton/Departments";
 
 const api = axios.create({
     baseURL:"http://localhost:8000/api/"
@@ -16,7 +18,8 @@ function Profile(props)
 
     useEffect(() =>
     {
-        setBaseImage(defaultProfilers);
+        //Set default image
+        // setBaseImage(defaultProfilers);
     },[])
 
     const handleChangeImage = async(e) =>
@@ -120,6 +123,7 @@ function Profile(props)
     return (
         <div className={"profile"}>
             <div className="profile-flex">
+
                 <form onSubmit={handleSubmit(onSubmitData)}>
                     <div className="top">
                     <h1 className={"Title"}>TeamTalk.</h1>
@@ -130,12 +134,9 @@ function Profile(props)
                         Please fill the optional requirement below to proceed!</p>
                 </div>
                     <div className="middle">
-                    <div className={"middle-department"}>
 
-                        <label>Department</label>
-                        <DepartmentButton name={"ITED"}/>
-                        <DepartmentButton name={"BIOD"}/>
-                        <DepartmentButton name={"TEED"}/>
+                        <p className="label-selection">Select 1 of 3 Department to get related contents</p>
+                        <Departments/>
 
                         {/*<label>Department</label>*/}
                         {/*<select placeholder={"Activity"} className={"select-Activity"} id={"first-category"} {...register("department")}>*/}
@@ -143,9 +144,9 @@ function Profile(props)
                         {/*    <option value={2}>ITED</option>*/}
                         {/*    <option value={3}>TTED</option>*/}
                         {/*</select>*/}
-                    </div>
 
-                    <h4 className={"label-selection"}>Select Your main 3 Activity</h4>
+
+                    <h4 className={"label-selection"}>Select 3 Activity that you most interested the most</h4>
 
                     <div className={"middle-category"}>
 
@@ -153,7 +154,8 @@ function Profile(props)
 
                             <div className={"middle-category-div"}>
                                 <label className={"selectLabel"} htmlFor={"first-category"}>1st Activity </label>
-                                <select placeholder={"Activity"} className={"select-Activity"} id={"first-category"} {...register("firstActivity")}>
+                                <select defaultValue={""} placeholder={"Activity"} className={"select-Activity"} id={"first-category"} {...register("firstActivity")}>
+                                    <option className={"placeholderSelect"} disabled value={""}>Select Activity</option>
                                     <option value={1}>Assignment</option>
                                     <option value={2}>Lab</option>
                                     <option value={3}>Personal project</option>
@@ -167,6 +169,7 @@ function Profile(props)
                             <div className={"middle-category-div"}>
                                 <label className={"selectLabel"} htmlFor={"second-category"}>2st Activity</label>
                                 <select placeholder={"Activity"} className={"select-Activity"} id={"second-category"} {...register("secondActivity")}>
+                                    <option className={"placeholderSelect"} value={""}>Select Activity</option>
                                     <option value={1}>Assignment</option>
                                     <option value={2}>Lab</option>
                                     <option value={3}>Personal project</option>
@@ -180,6 +183,7 @@ function Profile(props)
                             <div className={"middle-category-div"}>
                                 <label className={"selectLabel"} htmlFor={"Third-category"}>3rd Activity</label>
                                 <select placeholder={"Activity"} className={"select-Activity"} id={"Third-category"}{...register("thirdActivity")}>
+                                    <option className={"placeholderSelect"} value={""}>Select Activity</option>
                                     <option value={1}>Assignment</option>
                                     <option value={2}>Lab</option>
                                     <option value={3}>Personal project</option>
@@ -202,8 +206,12 @@ function Profile(props)
 
 
                         <div className={"middle-category-right"}>
-
-                            <img className="profileImgPreview" src={baseImage} alt=""/>
+                            <div className={"imageContainer"}>
+                                <div className="imgInside">
+                                </div>
+                                    <img className="profileImgPreview" src={baseImage} alt=""/>
+                                <div className={"previewLabel"}>{baseImage === "" && "Preview Profile"}</div>
+                            </div>
 
                             <div className={"upload-btn-wrapper"}>
                                 <button className={"btns"}>Upload</button>
@@ -219,9 +227,12 @@ function Profile(props)
                     </div>
 
                 </div>
+
                     <div className="bottom">
                         <button className={"finishButton"} type="submit">Proceed</button>
+                        <Link className={"linkSkip"}  to={"/dashboard"}>Skip Now</Link>
                     </div>
+
                 </form>
                 {/*<div className="bottom">
                     <form onSubmit={handleSubmit(onSubmit)}>
