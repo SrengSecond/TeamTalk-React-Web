@@ -21,7 +21,14 @@
 }
   .btn--primary
   {
-    background-color:var(--primary)
+    background-color:var(--primary);
+    border: 1px solid var(--primary);
+    &:hover
+    {
+      border: 1px solid #fff;
+
+    }
+
   }
   .btn--outline
   {
@@ -30,6 +37,7 @@
     padding:8px 20px;
     border-radius: 4px;
     border: 1px solid var(--primary);
+    //outline: 1px solid var(--primary);
     transition: all 0.3s ease-out
   }
   .btn--medium
@@ -45,5 +53,13 @@
     border-radius: 4px;
     font-size:20px;
     color:#fff;
+  }
+  .btn--no-radius
+  {
+    border-radius:0;
+  }
+  .btn--radius
+  {
+
   }
 

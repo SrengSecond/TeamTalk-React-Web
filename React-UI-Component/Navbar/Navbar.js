@@ -16,8 +16,8 @@ function Navbar(props)
         <>
             <nav className={"NavbarItems"}>
                 <h1 className={"navbar-logo"}>
-                    <i className={"fas fa-box-open"}/>
-                    Kollection
+                    <i className={"fas fa-pizza-slice"}/>
+                    FlyersPizza.
                 </h1>
 
                 <div className={"menu-icon"}
@@ -29,8 +29,9 @@ function Navbar(props)
                     {MenuItems.map((item,index)=>
                     {
                         return (
-                            <li>
+                            <li key={index}>
                                 <Link to={item.url}
+                                      onClick={handleClick}
                                       className={item.cName}>
                                     {item.title}
                                 </Link>
